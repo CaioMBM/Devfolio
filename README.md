@@ -1,2 +1,2 @@
 # Devfolio
- No meu devfólio você verá minhas experiências, meus projetos e falará um pouco sobre mim.
+    No meu devfólio você verá minhas experiências, meus projetos e falarei um pouco sobre mim.
