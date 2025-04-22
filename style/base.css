@@ -27,8 +27,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
+/* Header */
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background: linear-gradient(90deg,rgba(24, 34, 101, 1) 8%, rgba(98, 118, 212, 1) 42%, rgba(97, 34, 165, 1) 100%);
+}
+
+/* Todos os links da nav */
+nav a{
+    font-family: var(--robotoCondesed);
+    color: var(--branco);
+}
+
+/* Meu nome na nav */
+.nav-nome{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-nome::before{
+    display: inline-block;
+    content: "";
+    width: 2px;
+    height: 22px;
+    margin-right: 10px;
+    background-color: var(--branco);
+}
+
+/* Container que engloba os itens de navegação da nav */
+.nav-containerItens{
+    display: flex;
+    gap: 50px;
+}
+
+/* Itens de navegação da nav */
+.nav-containerItens a{
+    font-size: 20px;
+}
+
+.nav-containerItens a:hover{
+    text-decoration: underline;
+}
+
+.nav-pagAtual{
+    text-decoration: underline;
+}
+
+
+
+/* Main */
 main{
     padding: 80px 120px;
 }
