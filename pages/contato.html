@@ -8,17 +8,33 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../style/base.css">
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JS -->
+    <script src="../js/header.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="../index.html" target="_blank" class="nav-nome">Caio Montenegro</a>
+            <!-- Div que engloba o nome e o menu hamburguer do header -->
+            <div class="nomeIcone">
+                <a href="index.html" class="nav-nome">Caio Montenegro</a>
+    
+                <!-- Abrir menu -->
+                <i class="bi bi-list icon-menuHeader"></i>
+                <!-- Fechar menu -->
+                <i class="bi bi-x-lg icon-menuHeader"></i>
+            </div>
 
+            <!-- Container que engloba os itens de navegação da nav -->
             <div class="nav-containerItens">
-                <a href="../index.html" target="_blank">Home</a>
-                <a href="projetos.html" target="_blank">Projetos</a>
-                <a href="sobre.html" target="_blank">Sobre</a>
-                <a href="contato.html" class="nav-pagAtual">Contato</a>
+                <!-- Lista dos itens de navegação da nav -->
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="projetos.html" target="_blank">Projetos</a></li>
+                    <li><a href="sobre.html"    target="_blank">Sobre</a></li>
+                    <li><a href="contato.html"  target="_blank" class="nav-pagAtual">Contato</a></li>
+                </ul>
             </div>
         </nav>
     </header>

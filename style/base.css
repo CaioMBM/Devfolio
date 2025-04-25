@@ -28,6 +28,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: var(--azul-escuro);
 }
 
 /* Header */
@@ -47,7 +52,7 @@ nav a{
 }
 
 /* Meu nome na nav */
-.nav-nome{
+a.nav-nome{
     font-size: 30px;
     font-weight: bold;
 }
@@ -61,8 +66,8 @@ nav a{
     background-color: var(--branco);
 }
 
-/* Container que engloba os itens de navegação da nav */
-.nav-containerItens{
+/* Lista dos itens de navegação da nav */
+.nav-containerItens ul{
     display: flex;
     gap: 50px;
 }
@@ -70,6 +75,7 @@ nav a{
 /* Itens de navegação da nav */
 .nav-containerItens a{
     font-size: 20px;
+    padding: 10px;
 }
 
 .nav-containerItens a:hover{
@@ -80,9 +86,116 @@ nav a{
     text-decoration: underline;
 }
 
+/* Div que engloba o nome e o menu hamburguer do header */
+.nomeIcone{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Ícones do menu hambuerguer */
+.icon-menuHeader{
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    color: var(--branco);
+}
 
 
 /* Main */
 main{
     padding: 80px 120px;
+}
+
+
+
+/* Media queris */
+@media (min-width: 310px) and (max-width: 500px) {
+    /* Header */
+    nav{
+        height: fit-content;
+        padding: 15px 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Div que engloba o nome e o menu hamburguer do header */
+    div.nomeIcone{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Container que engloba os itens de navegação da nav */
+    .nav-containerItens{
+        display: none; 
+        width: 100%;
+    }
+
+    /* Lista dos itens de navegação da nav */
+    .nav-containerItens ul{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* Itens de navegação da nav */
+    .nav-containerItens li{
+        border: 1px solid var(--preto);
+        text-align: center;
+        font-size: 20px;
+        padding: 15px 10px;
+        width: 100%;
+        transition: 300ms;
+        background-color: var(--lilas);
+    }
+
+    .nav-containerItens li:active{
+        background-color: var(--preto);
+    }
+
+    .nav-containerItens li:hover{
+        background-color: var(--azul-pastel);
+    }
+
+    /* Ícone abrir menu hamburguer */
+    .icon-menuHeader:nth-child(2){
+        display: block;
+    }
+}
+@media (min-width: 500px) and (max-width: 750px) {
+    /* Header */
+    nav{
+        height: fit-content;
+        padding: 15px 0;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Div que engloba o nome e o menu hamburguer do header */
+    div.nomeIcone{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Container que engloba os itens de navegação da nav */
+    .nav-containerItens{
+        display: none; 
+    }
+
+    /* Lista dos itens de navegação da nav */
+    .nav-containerItens ul{
+        gap: 10px;
+    }
+
+    /* Itens de navegação da nav */
+    .nav-containerItens li{
+        font-size: 20px;
+        padding: 20px;
+    }
+
+
+    /* Ícone abrir menu hamburguer */
+    .icon-menuHeader:nth-child(2){
+        display: block;
+    }
 }
