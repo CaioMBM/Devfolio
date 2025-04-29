@@ -72,6 +72,7 @@ section.mainParte2 div{
     margin-top: 20px;
 }
 
+/* Ícones das redes sociais */
 .icon-redeSocial{
     cursor: pointer;
     font-size: 40px;
@@ -81,4 +82,210 @@ section.mainParte2 div{
 
 .icon-redeSocial:hover{
     color: var(--ciano-claro);
+}
+
+
+
+/* Media query */
+@media screen and (max-width: 389px) {
+    main{
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px 10px;
+    }
+
+    /* Texto da home */
+    section.mainParte1 h1{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    section.mainParte1 span{
+        font-size: 25px;
+    }
+
+    section.mainParte1 p{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* Caixa que engloba os botões */
+    section.mainParte1 div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px 30px;
+        transition: 100ms;
+    }
+
+    section.mainParte1 button{
+        width: 115px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    section.mainParte1 button:hover{
+        /* "Removendo" o efeito do hover para que o efeito de clique funcione*/
+        border: 3px solid var(--ciano-medio);
+        color: var(--ciano-medio);
+        background-color: transparent;
+    }
+
+    section.mainParte1 button:active{
+        /* Efeito de clique */
+        color: var(--branco);
+        background-color: var(--ciano-medio);
+    }
+
+    /* Section mainParte2 */
+    section.mainParte2 img{
+        width: 220px;
+        height: 285px;
+    }
+
+    /* Ícones das redes sociais */
+    .icon-redeSocial{
+        font-size: 35px;
+        transition: 100ms;
+    }
+
+    .icon-redeSocial:hover{
+        /* "Removendo" o efeito do hover para que o efeito de clique funcione*/
+        color: var(--ciano-escuro);
+    }
+
+    .icon-redeSocial:active{
+        /* Efeito de clique */
+        color: var(--ciano-claro);
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    main{
+        flex-direction: column;
+        gap: 50px;
+        padding: 40px 20px;
+    }
+
+    /* Texto da home */
+    section.mainParte1 h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    section.mainParte1 span{
+        font-size: 30px;
+    }
+    
+    section.mainParte1 p{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* Caixa que engloba os botões */
+    section.mainParte1 div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px 30px;
+        transition: 100ms;
+    }
+
+    section.mainParte1 button{
+        width: 135px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    section.mainParte1 button:hover{
+        /* "Removendo" o efeito do hover para que o efeito de clique funcione*/
+        border: 3px solid var(--ciano-medio);
+        color: var(--ciano-medio);
+        background-color: transparent;
+    }
+
+    section.mainParte1 button:active{
+        /* Efeito de clique */
+        color: var(--branco);
+        background-color: var(--ciano-medio);
+    }
+
+    /* Ícones das redes sociais */
+    .icon-redeSocial{
+        font-size: 40px;
+        transition: 100ms;
+    }
+
+    .icon-redeSocial:hover{
+        /* "Removendo" o efeito do hover para que o efeito de clique funcione*/
+        color: var(--ciano-escuro);
+    }
+
+    .icon-redeSocial:active{
+        /* Efeito de clique */
+        color: var(--ciano-claro);
+    }
+}
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    main{
+        flex-direction: column;
+        gap: 50px;
+        padding: 40px 20px;
+    }
+
+    /* Texto da home */
+    section.mainParte1 h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    section.mainParte1 span{
+        font-size: 30px;
+    }
+    
+    section.mainParte1 p{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* Caixa que engloba os botões */
+    section.mainParte1 div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px 30px;
+        transition: 100ms;
+    }
+
+    section.mainParte1 button:hover{
+        /* "Removendo" o efeito do hover para que o efeito de clique funcione*/
+        border: 3px solid var(--ciano-medio);
+        color: var(--ciano-medio);
+        background-color: transparent;
+    }
+
+    section.mainParte1 button:active{
+        color: var(--branco);
+        background-color: var(--ciano-medio);
+    }
+}
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+    main{
+        flex-direction: column;
+        gap: 50px;
+        padding: 80px 50px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 998px) {
+    main{
+        flex-direction: column;
+        gap: 50px;
+        padding: 80px 50px;
+    }
+}
+@media only screen and (min-width: 999px) and (max-width: 1210px) {
+    main{
+        justify-content: space-between;
+        gap: 0;
+        padding: 80px 50px;
+    }
 }
