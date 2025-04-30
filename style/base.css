@@ -31,7 +31,11 @@
     list-style: none;
 }
 
-body{
+html, body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     background-color: var(--azul-escuro);
 }
 
@@ -103,7 +107,17 @@ a.nav-nome{
 
 /* Main */
 main{
-    padding: 80px 120px;
+    padding: 50px 120px;
+}
+
+
+/* Footer*/
+footer{
+    padding: 20px;
+    text-align: center;
+    font-family: var(--robotoCondesed);
+    color: var(--ciano-claro);
+    background-color: var(--preto);
 }
 
 
