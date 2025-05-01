@@ -1,1 +1,60 @@
 @import url(base.css);
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+/* Título da section */
+section h1{
+    font-size: 35px;
+    margin-bottom: 50px;
+    color: var(--branco);
+    font-family: var(--robotoCondesed);
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Container com os projetos */
+div.containerProjetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Div que enbloba img do projeto + nome do projeto */
+div.containerProjetos div{
+    display: flex;
+    flex-direction: column;
+    transition: 300ms;
+}
+
+div.containerProjetos div:hover{
+    scale: 1.05;
+}
+
+/* Imagem do projeto */
+div.containerProjetos img{
+    width: 400px;
+    height: 290px;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Nome do projeto */
+h2.nomeProjeto{
+    border-radius: 0 0 5px 5px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--robotoCondesed);
+    color: var(--branco);
+    background-color: var(--ciano-medio);
+}
+
+/* Nome do projeto freelance */
+h2.nomeFreelance{
+    background-color: var(--lilas);
+}
