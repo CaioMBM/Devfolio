@@ -58,3 +58,143 @@ h2.nomeProjeto{
 h2.nomeFreelance{
     background-color: var(--lilas);
 }
+
+/* Modal */
+div.modalContainer{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Modal - Caixa com conteúdo do modal */
+div.modalProjeto{
+    width: 750px;
+    height: 650px;
+    box-shadow: 0px 0px 10px 4px var(--ciano-claro);
+    border-radius: 10px;
+    padding: 0 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--azul-escuro);
+}
+
+/* Modal - Título do projeto */
+div.modalProjeto h2{
+    font-family: var(--robotoCondesed);
+    font-size: 30px;
+    color: var(--branco);
+}
+
+/* Modal - Caixa com imagem + data do projeto */
+div.modalImgData{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+/* Modal - Imagem do projeto */
+div.modalImgData > img{
+    width: 600px;
+    height: 250px;
+    border-radius: 5px;
+    border: 3px solid var(--branco);
+}
+
+/* Modal - Data do projeto */
+div.modalImgData span{
+    font-family: var(--robotoCondesed);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--branco);
+}
+
+/* Modal - Ícone da tecnologia */
+img.iconTecnologia{
+    width: 40px;
+}
+
+/* Modal - Caixa com informações de texto + tecnologias */
+div.modalInformacoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Modal - Caixa com informações de texto */
+div.sobreProjeto{
+    width: 315px;
+}
+
+/* Modal - Título do tópico*/
+h3.modalTituloTopico{
+    font-family: var(--robotoCondesed);
+    font-size: 20px;
+    color: var(--branco);
+}
+
+/* Modal - Parágrado do tópico */
+div.sobreProjeto p{
+    margin-top: 5px;
+    font-family: var(--robotoCondesed);
+    font-size: 15px;
+    color: var(--branco);
+}
+
+/* Modal - link para o site inspiração do projeto */
+div.sobreProjeto a{
+    text-decoration: underline;
+    color: var(--cinza-medio);
+    transition: 300ms;
+}
+
+div.sobreProjeto a:hover{
+    color: var(--cinza-escuro);
+}
+
+/* Modal - Título do tópico Tecnologias */
+div.tecnologiasProjeto h3{
+    text-align: center;
+}
+
+/* Modal - Imagens das tecnologias */
+img.iconTecnologia{
+    width: 50px;
+    transition: 300ms;
+}
+
+img.iconTecnologia:hover{
+    scale: 1.2;
+}
+
+/* Modal - Caixa dos botões */
+div.containerBotoes{
+    display: flex;
+    gap: 50px;
+}
+
+/* Modal - Botáo */
+a.modalBotao{
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-family: var(--robotoCondesed);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--preto);
+    background-color: var(--branco);
+    transition: 300ms;
+}
+
+a.modalBotao:hover{
+    scale: 1.05;
+    color: var(--branco);
+    background-color: var(--ciano-medio);
+}
