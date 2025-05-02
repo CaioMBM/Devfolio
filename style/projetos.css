@@ -64,12 +64,14 @@ h2.nomeFreelance{
 /* Modal - Camada preta */
 div.camadaPreta{
     visibility: hidden;
+    opacity: 0;
     width: 99vw;
     height: 100dvh;
     position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.692);
+    transition: 500ms;
 }
 
 /* Modal - Ícone para fechar modal */
@@ -85,6 +87,7 @@ i.icon-x{
 
 i.icon-x:hover{
     color: var(--branco);
+    scale: 1.1;
 }
 
 /* Modal - Caixa com conteúdo do modal */
