@@ -1,8 +1,9 @@
+const camadaPreta = document.querySelector('.camadaPreta');
+
 // Modal (Projeto Maior) - Recriando Site
 const cardRecriandoSite  = document.querySelectorAll(".containerProjetos div")[0];
 const modalRecriandoSite = document.querySelectorAll(".modalProjeto")[0];
 const modalFechar        = document.querySelectorAll(".icon-x")[0];
-const camadaPreta        = document.querySelector('.camadaPreta');
 
 
 // Abrir modal
@@ -42,3 +43,25 @@ function fecharPortifolio(){
     modalPortifolio.style.visibility = 'hidden';
 }
 esconderPortifolio.addEventListener("click", fecharPortifolio);
+
+
+// Modal (Projeto Maior) - FlexBLog
+const cardFlexBLog     = document.querySelectorAll(".containerProjetos div")[2];
+const modalFlexBLog    = document.querySelectorAll(".modalProjeto")[2];
+const esconderFlexBLog = document.querySelectorAll(".icon-x")[2];
+
+// Abrir modal
+function abrirFlexBLog(){
+    camadaPreta.style.visibility   = 'visible';
+    camadaPreta.style.opacity      = 100;
+    modalFlexBLog.style.visibility = 'visible';
+}
+cardFlexBLog.addEventListener("click", abrirFlexBLog);
+
+// Fechar modal
+function fecharFlexBLog(){
+    camadaPreta.style.visibility   = 'hidden';
+    camadaPreta.style.opacity      = 0;
+    modalFlexBLog.style.visibility = 'hidden';
+}
+esconderFlexBLog.addEventListener("click", fecharFlexBLog);

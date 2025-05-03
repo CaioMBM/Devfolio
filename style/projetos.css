@@ -185,9 +185,11 @@ div.sobreProjeto a:hover{
     color: var(--cinza-escuro);
 }
 
-/* Modal - Título do tópico Tecnologias */
-div.tecnologiasProjeto h3{
-    text-align: center;
+/* Caixa com as tecnologias  */
+.tecnologiasProjeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Modal - Imagens das tecnologias */
