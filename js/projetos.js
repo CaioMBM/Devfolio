@@ -65,3 +65,25 @@ function fecharFlexBLog(){
     modalFlexBLog.style.visibility = 'hidden';
 }
 esconderFlexBLog.addEventListener("click", fecharFlexBLog);
+
+
+// Modal (Projeto Maior) - Eduadro Brito (Freelance)
+const cardEduadroBrito     = document.querySelectorAll(".containerProjetos div")[3];
+const modalEduadroBrito    = document.querySelectorAll(".modalProjeto")[3];
+const esconderEduadroBrito = document.querySelectorAll(".icon-x")[3];
+
+// Abrir modal
+function abrirEduadroBrito(){
+    camadaPreta.style.visibility       = 'visible';
+    camadaPreta.style.opacity          = 100;
+    modalEduadroBrito.style.visibility = 'visible';
+}
+cardEduadroBrito.addEventListener("click", abrirEduadroBrito);
+
+// Fechar modal
+function fecharEduadroBrito(){
+    camadaPreta.style.visibility       = 'hidden';
+    camadaPreta.style.opacity          = 0;
+    modalEduadroBrito.style.visibility = 'hidden';
+}
+esconderEduadroBrito.addEventListener("click", fecharEduadroBrito);

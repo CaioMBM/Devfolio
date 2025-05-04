@@ -110,6 +110,12 @@ div.modalProjeto{
     background-color: var(--azul-escuro);
 }
 
+/* Modal - Freelance */
+div.modalFreelance{
+    background-color: var(--roxo);
+    box-shadow: 0px 0px 10px 4px var(--lilas);
+}
+
 /* Modal - Título do projeto */
 div.modalProjeto h2{
     font-family: var(--robotoCondesed);
@@ -185,11 +191,19 @@ div.sobreProjeto a:hover{
     color: var(--cinza-escuro);
 }
 
-/* Caixa com as tecnologias  */
-.tecnologiasProjeto{
+/* Modal - Caixa título + tecnologias  */
+div.tecnologiasProjeto{
+    width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Modal - Caixa com os ícones de tecnologia */
+div.tecnologiasProjeto div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Modal - Imagens das tecnologias */
