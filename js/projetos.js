@@ -87,3 +87,25 @@ function fecharEduadroBrito(){
     modalEduadroBrito.style.visibility = 'hidden';
 }
 esconderEduadroBrito.addEventListener("click", fecharEduadroBrito);
+
+
+// Modal (Projeto Maior) - Prevent Elevadores (Freelance)
+const cardPreventElevadores     = document.querySelectorAll(".containerProjetos div")[4];
+const modalPreventElevadores    = document.querySelectorAll(".modalProjeto")[4];
+const esconderPreventElevadores = document.querySelectorAll(".icon-x")[4];
+
+// Abrir modal
+function abrirPreventElevadores(){
+    camadaPreta.style.visibility            = 'visible';
+    camadaPreta.style.opacity               = 100;
+    modalPreventElevadores.style.visibility = 'visible';
+}
+cardPreventElevadores.addEventListener("click", abrirPreventElevadores);
+
+// Fechar modal
+function fecharPreventElevadores(){
+    camadaPreta.style.visibility            = 'hidden';
+    camadaPreta.style.opacity               = 0;
+    modalPreventElevadores.style.visibility = 'hidden';
+}
+esconderPreventElevadores.addEventListener("click", fecharPreventElevadores);
