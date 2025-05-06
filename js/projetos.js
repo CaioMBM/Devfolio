@@ -180,3 +180,25 @@ function fecharCalculadoraIMC(){
     modalCalculadoraIMC.style.visibility = 'hidden';
 }
 esconderCalculadoraIMC.addEventListener("click", fecharCalculadoraIMC);
+
+
+// Modal (Projeto Menores) - Conversor de Moedas
+const cardConversorMoedas     = document.querySelectorAll(".containerProjetos div")[8];
+const modalConversorMoedas    = document.querySelectorAll(".modalProjeto")[8];
+const esconderConversorMoedas = document.querySelectorAll(".icon-x")[8];
+
+// Abrir modal
+function abrirConversorMoedas(){
+    camadaPretaMenor.style.visibility     = 'visible';
+    camadaPretaMenor.style.opacity        = 100;
+    modalConversorMoedas.style.visibility = 'visible';
+}
+cardConversorMoedas.addEventListener("click", abrirConversorMoedas);
+
+// Fechar modal
+function fecharConversorMoedas(){
+    camadaPretaMenor.style.visibility     = 'hidden';
+    camadaPretaMenor.style.opacity        = 0;
+    modalConversorMoedas.style.visibility = 'hidden';
+}
+esconderConversorMoedas.addEventListener("click", fecharConversorMoedas);
