@@ -136,3 +136,25 @@ function fecharTelaDeLogin(){
     modalTelaDeLogin.style.visibility = 'hidden';
 }
 esconderTelaDeLogin.addEventListener("click", fecharTelaDeLogin);
+
+
+// Modal (Projeto Menores) - Sobre Mim
+const cardSobreMim     = document.querySelectorAll(".containerProjetos div")[6];
+const modalSobreMim    = document.querySelectorAll(".modalProjeto")[6];
+const esconderSobreMim = document.querySelectorAll(".icon-x")[6];
+
+// Abrir modal
+function abrirSobreMim(){
+    camadaPretaMenor.style.visibility = 'visible';
+    camadaPretaMenor.style.opacity    = 100;
+    modalSobreMim.style.visibility    = 'visible';
+}
+cardSobreMim.addEventListener("click", abrirSobreMim);
+
+// Fechar modal
+function fecharSobreMim(){
+    camadaPretaMenor.style.visibility = 'hidden';
+    camadaPretaMenor.style.opacity    = 0;
+    modalSobreMim.style.visibility    = 'hidden';
+}
+esconderSobreMim.addEventListener("click", fecharSobreMim);
