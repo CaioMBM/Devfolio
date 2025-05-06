@@ -158,3 +158,25 @@ function fecharSobreMim(){
     modalSobreMim.style.visibility    = 'hidden';
 }
 esconderSobreMim.addEventListener("click", fecharSobreMim);
+
+
+// Modal (Projeto Menores) - Calculadora de IMC
+const cardCalculadoraIMC     = document.querySelectorAll(".containerProjetos div")[7];
+const modalCalculadoraIMC    = document.querySelectorAll(".modalProjeto")[7];
+const esconderCalculadoraIMC = document.querySelectorAll(".icon-x")[7];
+
+// Abrir modal
+function abrirCalculadoraIMC(){
+    camadaPretaMenor.style.visibility    = 'visible';
+    camadaPretaMenor.style.opacity       = 100;
+    modalCalculadoraIMC.style.visibility = 'visible';
+}
+cardCalculadoraIMC.addEventListener("click", abrirCalculadoraIMC);
+
+// Fechar modal
+function fecharCalculadoraIMC(){
+    camadaPretaMenor.style.visibility    = 'hidden';
+    camadaPretaMenor.style.opacity       = 0;
+    modalCalculadoraIMC.style.visibility = 'hidden';
+}
+esconderCalculadoraIMC.addEventListener("click", fecharCalculadoraIMC);
