@@ -1,111 +1,138 @@
-const camadaPreta = document.querySelector('.camadaPreta');
+// Variável com a camada preta para PROJETOS MAIORES
+const camadaPretaProjMaior = document.querySelectorAll('.camadaPreta')[0];
 
-// Modal (Projeto Maior) - Recriando Site
+
+// Modal (Projeto Maiores) - Recriando Site
 const cardRecriandoSite  = document.querySelectorAll(".containerProjetos div")[0];
 const modalRecriandoSite = document.querySelectorAll(".modalProjeto")[0];
 const modalFechar        = document.querySelectorAll(".icon-x")[0];
 
-
 // Abrir modal
 function abrirRecriandoSite(){
-    camadaPreta.style.visibility        = 'visible';
-    camadaPreta.style.opacity           = 100;
-    modalRecriandoSite.style.visibility = 'visible';
+    camadaPretaProjMaior.style.visibility = 'visible';
+    camadaPretaProjMaior.style.opacity    = 100;
+    modalRecriandoSite.style.visibility   = 'visible';
 }
 cardRecriandoSite.addEventListener("click", abrirRecriandoSite);
 
 // Fechar modal
 function fecharRecriandoSite(){
-    camadaPreta.style.visibility        = 'hidden';
-    camadaPreta.style.opacity           = 0;
-    modalRecriandoSite.style.visibility = 'hidden';
+    camadaPretaProjMaior.style.visibility = 'hidden';
+    camadaPretaProjMaior.style.opacity    = 0;
+    modalRecriandoSite.style.visibility  = 'hidden';
 }
 modalFechar.addEventListener("click", fecharRecriandoSite);
 
 
-// Modal (Projeto Maior) - Portifólio 1
+// Modal (Projeto Maiores) - Portifólio 1
 const cardPortifolio     = document.querySelectorAll(".containerProjetos div")[1];
 const modalPortifolio    = document.querySelectorAll(".modalProjeto")[1];
 const esconderPortifolio = document.querySelectorAll(".icon-x")[1];
 
 // Abrir modal
 function abrirPortifolio(){
-    camadaPreta.style.visibility     = 'visible';
-    camadaPreta.style.opacity        = 100;
-    modalPortifolio.style.visibility = 'visible';
+    camadaPretaProjMaior.style.visibility = 'visible';
+    camadaPretaProjMaior.style.opacity    = 100;
+    modalPortifolio.style.visibility      = 'visible';
 }
 cardPortifolio.addEventListener("click", abrirPortifolio);
 
 // Fechar modal
 function fecharPortifolio(){
-    camadaPreta.style.visibility     = 'hidden';
-    camadaPreta.style.opacity        = 0;
-    modalPortifolio.style.visibility = 'hidden';
+    camadaPretaProjMaior.style.visibility = 'hidden';
+    camadaPretaProjMaior.style.opacity    = 0;
+    modalPortifolio.style.visibility      = 'hidden';
 }
 esconderPortifolio.addEventListener("click", fecharPortifolio);
 
 
-// Modal (Projeto Maior) - FlexBLog
+// Modal (Projeto Maiores) - FlexBLog
 const cardFlexBLog     = document.querySelectorAll(".containerProjetos div")[2];
 const modalFlexBLog    = document.querySelectorAll(".modalProjeto")[2];
 const esconderFlexBLog = document.querySelectorAll(".icon-x")[2];
 
 // Abrir modal
 function abrirFlexBLog(){
-    camadaPreta.style.visibility   = 'visible';
-    camadaPreta.style.opacity      = 100;
-    modalFlexBLog.style.visibility = 'visible';
+    camadaPretaProjMaior.style.visibility = 'visible';
+    camadaPretaProjMaior.style.opacity    = 100;
+    modalFlexBLog.style.visibility        = 'visible';
 }
 cardFlexBLog.addEventListener("click", abrirFlexBLog);
 
 // Fechar modal
 function fecharFlexBLog(){
-    camadaPreta.style.visibility   = 'hidden';
-    camadaPreta.style.opacity      = 0;
-    modalFlexBLog.style.visibility = 'hidden';
+    camadaPretaProjMaior.style.visibility = 'hidden';
+    camadaPretaProjMaior.style.opacity    = 0;
+    modalFlexBLog.style.visibility        = 'hidden';
 }
 esconderFlexBLog.addEventListener("click", fecharFlexBLog);
 
 
-// Modal (Projeto Maior) - Eduadro Brito (Freelance)
+// Modal (Projeto Maiores) - Eduadro Brito (Freelance)
 const cardEduadroBrito     = document.querySelectorAll(".containerProjetos div")[3];
 const modalEduadroBrito    = document.querySelectorAll(".modalProjeto")[3];
 const esconderEduadroBrito = document.querySelectorAll(".icon-x")[3];
 
 // Abrir modal
 function abrirEduadroBrito(){
-    camadaPreta.style.visibility       = 'visible';
-    camadaPreta.style.opacity          = 100;
-    modalEduadroBrito.style.visibility = 'visible';
+    camadaPretaProjMaior.style.visibility = 'visible';
+    camadaPretaProjMaior.style.opacity    = 100;
+    modalEduadroBrito.style.visibility    = 'visible';
 }
 cardEduadroBrito.addEventListener("click", abrirEduadroBrito);
 
 // Fechar modal
 function fecharEduadroBrito(){
-    camadaPreta.style.visibility       = 'hidden';
-    camadaPreta.style.opacity          = 0;
-    modalEduadroBrito.style.visibility = 'hidden';
+    camadaPretaProjMaior.style.visibility = 'hidden';
+    camadaPretaProjMaior.style.opacity    = 0;
+    modalEduadroBrito.style.visibility    = 'hidden';
 }
 esconderEduadroBrito.addEventListener("click", fecharEduadroBrito);
 
 
-// Modal (Projeto Maior) - Prevent Elevadores (Freelance)
+// Modal (Projeto Maiores) - Prevent Elevadores (Freelance)
 const cardPreventElevadores     = document.querySelectorAll(".containerProjetos div")[4];
 const modalPreventElevadores    = document.querySelectorAll(".modalProjeto")[4];
 const esconderPreventElevadores = document.querySelectorAll(".icon-x")[4];
 
 // Abrir modal
 function abrirPreventElevadores(){
-    camadaPreta.style.visibility            = 'visible';
-    camadaPreta.style.opacity               = 100;
+    camadaPretaProjMaior.style.visibility   = 'visible';
+    camadaPretaProjMaior.style.opacity      = 100;
     modalPreventElevadores.style.visibility = 'visible';
 }
 cardPreventElevadores.addEventListener("click", abrirPreventElevadores);
 
 // Fechar modal
 function fecharPreventElevadores(){
-    camadaPreta.style.visibility            = 'hidden';
-    camadaPreta.style.opacity               = 0;
+    camadaPretaProjMaior.style.visibility   = 'hidden';
+    camadaPretaProjMaior.style.opacity      = 0;
     modalPreventElevadores.style.visibility = 'hidden';
 }
 esconderPreventElevadores.addEventListener("click", fecharPreventElevadores);
+
+
+// Variável com a camada preta para PROJETOS MAIORES
+const camadaPretaMenor = document.querySelectorAll('.camadaPreta')[1];
+
+
+// Modal (Projeto Menores) - Tela de Login
+const cardTelaDeLogin     = document.querySelectorAll(".containerProjetos div")[5];
+const modalTelaDeLogin    = document.querySelectorAll(".modalProjeto")[5];
+const esconderTelaDeLogin = document.querySelectorAll(".icon-x")[5];
+
+// Abrir modal
+function abrirTelaDeLogin(){
+    camadaPretaMenor.style.visibility = 'visible';
+    camadaPretaMenor.style.opacity    = 100;
+    modalTelaDeLogin.style.visibility = 'visible';
+}
+cardTelaDeLogin.addEventListener("click", abrirTelaDeLogin);
+
+// Fechar modal
+function fecharTelaDeLogin(){
+    camadaPretaMenor.style.visibility = 'hidden';
+    camadaPretaMenor.style.opacity    = 0;
+    modalTelaDeLogin.style.visibility = 'hidden';
+}
+esconderTelaDeLogin.addEventListener("click", fecharTelaDeLogin);
