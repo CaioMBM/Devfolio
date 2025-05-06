@@ -202,3 +202,25 @@ function fecharConversorMoedas(){
     modalConversorMoedas.style.visibility = 'hidden';
 }
 esconderConversorMoedas.addEventListener("click", fecharConversorMoedas);
+
+
+// Modal (Projeto Menores) - Card Review
+const cardCardReview     = document.querySelectorAll(".containerProjetos div")[9];
+const modalCardReview    = document.querySelectorAll(".modalProjeto")[9];
+const esconderCardReview = document.querySelectorAll(".icon-x")[9];
+
+// Abrir modal
+function abrirCardReview(){
+    camadaPretaMenor.style.visibility = 'visible';
+    camadaPretaMenor.style.opacity    = 100;
+    modalCardReview.style.visibility  = 'visible';
+}
+cardCardReview.addEventListener("click", abrirCardReview);
+
+// Fechar modal
+function fecharCardReview(){
+    camadaPretaMenor.style.visibility = 'hidden';
+    camadaPretaMenor.style.opacity    = 0;
+    modalCardReview.style.visibility  = 'hidden';
+}
+esconderCardReview.addEventListener("click", fecharCardReview);
