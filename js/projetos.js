@@ -1,5 +1,5 @@
 // Variável com a camada preta para PROJETOS MAIORES
-const camadaPretaProjMaior = document.querySelectorAll('.camadaPreta')[0];
+const camadaPretaPMa = document.querySelectorAll('.camadaPreta')[0];
 
 
 // Modal (Projeto Maiores) - Recriando Site
@@ -9,16 +9,16 @@ const modalFechar        = document.querySelectorAll(".icon-x")[0];
 
 // Abrir modal
 function abrirRecriandoSite(){
-    camadaPretaProjMaior.style.visibility = 'visible';
-    camadaPretaProjMaior.style.opacity    = 100;
+    camadaPretaPMa.style.visibility = 'visible';
+    camadaPretaPMa.style.opacity    = 100;
     modalRecriandoSite.style.visibility   = 'visible';
 }
 cardRecriandoSite.addEventListener("click", abrirRecriandoSite);
 
 // Fechar modal
 function fecharRecriandoSite(){
-    camadaPretaProjMaior.style.visibility = 'hidden';
-    camadaPretaProjMaior.style.opacity    = 0;
+    camadaPretaPMa.style.visibility = 'hidden';
+    camadaPretaPMa.style.opacity    = 0;
     modalRecriandoSite.style.visibility  = 'hidden';
 }
 modalFechar.addEventListener("click", fecharRecriandoSite);
@@ -31,16 +31,16 @@ const esconderPortifolio = document.querySelectorAll(".icon-x")[1];
 
 // Abrir modal
 function abrirPortifolio(){
-    camadaPretaProjMaior.style.visibility = 'visible';
-    camadaPretaProjMaior.style.opacity    = 100;
+    camadaPretaPMa.style.visibility = 'visible';
+    camadaPretaPMa.style.opacity    = 100;
     modalPortifolio.style.visibility      = 'visible';
 }
 cardPortifolio.addEventListener("click", abrirPortifolio);
 
 // Fechar modal
 function fecharPortifolio(){
-    camadaPretaProjMaior.style.visibility = 'hidden';
-    camadaPretaProjMaior.style.opacity    = 0;
+    camadaPretaPMa.style.visibility = 'hidden';
+    camadaPretaPMa.style.opacity    = 0;
     modalPortifolio.style.visibility      = 'hidden';
 }
 esconderPortifolio.addEventListener("click", fecharPortifolio);
@@ -53,16 +53,16 @@ const esconderFlexBLog = document.querySelectorAll(".icon-x")[2];
 
 // Abrir modal
 function abrirFlexBLog(){
-    camadaPretaProjMaior.style.visibility = 'visible';
-    camadaPretaProjMaior.style.opacity    = 100;
+    camadaPretaPMa.style.visibility = 'visible';
+    camadaPretaPMa.style.opacity    = 100;
     modalFlexBLog.style.visibility        = 'visible';
 }
 cardFlexBLog.addEventListener("click", abrirFlexBLog);
 
 // Fechar modal
 function fecharFlexBLog(){
-    camadaPretaProjMaior.style.visibility = 'hidden';
-    camadaPretaProjMaior.style.opacity    = 0;
+    camadaPretaPMa.style.visibility = 'hidden';
+    camadaPretaPMa.style.opacity    = 0;
     modalFlexBLog.style.visibility        = 'hidden';
 }
 esconderFlexBLog.addEventListener("click", fecharFlexBLog);
@@ -75,16 +75,16 @@ const esconderEduadroBrito = document.querySelectorAll(".icon-x")[3];
 
 // Abrir modal
 function abrirEduadroBrito(){
-    camadaPretaProjMaior.style.visibility = 'visible';
-    camadaPretaProjMaior.style.opacity    = 100;
+    camadaPretaPMa.style.visibility = 'visible';
+    camadaPretaPMa.style.opacity    = 100;
     modalEduadroBrito.style.visibility    = 'visible';
 }
 cardEduadroBrito.addEventListener("click", abrirEduadroBrito);
 
 // Fechar modal
 function fecharEduadroBrito(){
-    camadaPretaProjMaior.style.visibility = 'hidden';
-    camadaPretaProjMaior.style.opacity    = 0;
+    camadaPretaPMa.style.visibility = 'hidden';
+    camadaPretaPMa.style.opacity    = 0;
     modalEduadroBrito.style.visibility    = 'hidden';
 }
 esconderEduadroBrito.addEventListener("click", fecharEduadroBrito);
@@ -97,16 +97,16 @@ const esconderPreventElevadores = document.querySelectorAll(".icon-x")[4];
 
 // Abrir modal
 function abrirPreventElevadores(){
-    camadaPretaProjMaior.style.visibility   = 'visible';
-    camadaPretaProjMaior.style.opacity      = 100;
+    camadaPretaPMa.style.visibility   = 'visible';
+    camadaPretaPMa.style.opacity      = 100;
     modalPreventElevadores.style.visibility = 'visible';
 }
 cardPreventElevadores.addEventListener("click", abrirPreventElevadores);
 
 // Fechar modal
 function fecharPreventElevadores(){
-    camadaPretaProjMaior.style.visibility   = 'hidden';
-    camadaPretaProjMaior.style.opacity      = 0;
+    camadaPretaPMa.style.visibility   = 'hidden';
+    camadaPretaPMa.style.opacity      = 0;
     modalPreventElevadores.style.visibility = 'hidden';
 }
 esconderPreventElevadores.addEventListener("click", fecharPreventElevadores);
@@ -272,94 +272,186 @@ esconderCalcularIdade.addEventListener("click", fecharCalcularIdade);
 
 
 /* CARROSSEL */
-// Projetos Maiores 
-const setaEsquerda       = document.querySelectorAll(".setas")[0];
-const setaDireita        = document.querySelectorAll(".setas")[1];
-const containerProjMaior = document.querySelectorAll(".containerProjetos")[0];
-
+// Significados:
 /*
-Media query: 
+- PMe -> Projetos Menores
+- PMa -> Projetos Maiores
+*/
+
+// Media query: 
+/*
 - Até 389px
 - Entre 390px e 458px
 */
 const telaMuitoPequena = window.matchMedia('(max-width: 398px)');
 const telaPequena      = window.matchMedia('(min-width: 390px) and (max-width: 458px)');
 
+// Projetos Maiores 
+const PMaSetaEsquerda = document.querySelectorAll(".setas")[0];
+const PMaSetaDireita  = document.querySelectorAll(".setas")[1];
+const PMaContainer    = document.querySelectorAll(".containerProjetos")[0];
+
+
 // Mover para direita
-function carrosselMoverDireita(){
-    const scrollMax = containerProjMaior.scrollWidth - containerProjMaior.clientWidth;
+function carrosselPMaMoverDireita(){
+    const scrollMax = PMaContainer.scrollWidth - PMaContainer.clientWidth;
 
     // Telas com width de até 398px
     if (telaMuitoPequena.matches){
         // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
-        if (containerProjMaior.scrollLeft >= scrollMax) {
-            containerProjMaior.scrollLeft = 0;
+        if (PMaContainer.scrollLeft >= scrollMax) {
+            PMaContainer.scrollLeft = 0;
         } 
         // Se não for o último card, será mostrado o card seguinte
         else {
-            containerProjMaior.scrollLeft += 340; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+            PMaContainer.scrollLeft += 340; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
         }
     } 
     // Telas com width entre 398px e 458px
     else if(telaPequena.matches){
         // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
-        if (containerProjMaior.scrollLeft >= scrollMax) {
-            containerProjMaior.scrollLeft = 0;
+        if (PMaContainer.scrollLeft >= scrollMax) {
+            PMaContainer.scrollLeft = 0;
         } 
         // Se não for o último card, será mostrado o card seguinte
         else {
-            containerProjMaior.scrollLeft += 360; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+            PMaContainer.scrollLeft += 360; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
         }
     }
     // Telas com width superior a 398px
     else{
         // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
-        if (containerProjMaior.scrollLeft >= scrollMax) {
-            containerProjMaior.scrollLeft = 0;
+        if (PMaContainer.scrollLeft >= scrollMax) {
+            PMaContainer.scrollLeft = 0;
         } 
         // Se não for o último card, será mostrado o card seguinte
         else {
-            containerProjMaior.scrollLeft += 440; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+            PMaContainer.scrollLeft += 440; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
         }
     }
 }
-setaDireita.addEventListener('click', carrosselMoverDireita);
+PMaSetaDireita.addEventListener('click', carrosselPMaMoverDireita);
 
 // Mover para esquerda
-function carrosselMoverEsquerda(){
+function carrosselPMaMoverEsquerda(){
 
     // Telas com width de até 458px
     if (telaMuitoPequena.matches){
         // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
-        if (containerProjMaior.scrollLeft <= 0) {
-            containerProjMaior.scrollLeft = containerProjMaior.scrollWidth - containerProjMaior.clientWidth;
+        if (PMaContainer.scrollLeft <= 0) {
+            PMaContainer.scrollLeft = PMaContainer.scrollWidth - PMaContainer.clientWidth;
         } 
         // Se não for o 1º card, será mostrado o card anterior
         else {
-            containerProjMaior.scrollLeft -= 340; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+            PMaContainer.scrollLeft -= 340; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
         }
     }
     // Telas com width entre 398px e 458px
     else if(telaPequena.matches){
         // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
-        if (containerProjMaior.scrollLeft <= 0) {
-            containerProjMaior.scrollLeft = containerProjMaior.scrollWidth - containerProjMaior.clientWidth;
+        if (PMaContainer.scrollLeft <= 0) {
+            PMaContainer.scrollLeft = PMaContainer.scrollWidth - PMaContainer.clientWidth;
         } 
         // Se não for o 1º card, será mostrado o card anterior
         else {
-            containerProjMaior.scrollLeft -= 360; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+            PMaContainer.scrollLeft -= 360; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
         }
     }
     // Telas com width superior a 458px
     else{
         // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
-        if (containerProjMaior.scrollLeft <= 0) {
-            containerProjMaior.scrollLeft = containerProjMaior.scrollWidth - containerProjMaior.clientWidth;
+        if (PMaContainer.scrollLeft <= 0) {
+            PMaContainer.scrollLeft = PMaContainer.scrollWidth - PMaContainer.clientWidth;
         } 
         // Se não for o 1º card, será mostrado o card anterior
         else {
-            containerProjMaior.scrollLeft -= 440; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+            PMaContainer.scrollLeft -= 440; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
         }
     }
 }
-setaEsquerda.addEventListener('click', carrosselMoverEsquerda);
+PMaSetaEsquerda.addEventListener('click', carrosselPMaMoverEsquerda);
+
+
+// Projetos Menores
+const PMeSetaEsquerda = document.querySelectorAll(".setas")[2];
+const PMeSetaDireita  = document.querySelectorAll(".setas")[3];
+const PMeContainer    = document.querySelectorAll(".containerProjetos")[1];
+
+// Mover para direita
+function carrosselPMEMoverDireita(){
+    const scrollMax = PMeContainer.scrollWidth - PMeContainer.clientWidth;
+
+    // Telas com width de até 398px
+    if (telaMuitoPequena.matches){
+        // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
+        if (PMeContainer.scrollLeft >= scrollMax) {
+            PMeContainer.scrollLeft = 0;
+        } 
+        // Se não for o último card, será mostrado o card seguinte
+        else {
+            PMeContainer.scrollLeft += 340; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    } 
+    // Telas com width entre 398px e 458px
+    else if(telaPequena.matches){
+        // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
+        if (PMeContainer.scrollLeft >= scrollMax) {
+            PMeContainer.scrollLeft = 0;
+        } 
+        // Se não for o último card, será mostrado o card seguinte
+        else {
+            PMeContainer.scrollLeft += 360; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    }
+    // Telas com width superior a 398px
+    else{
+        // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
+        if (PMeContainer.scrollLeft >= scrollMax) {
+            PMeContainer.scrollLeft = 0;
+        } 
+        // Se não for o último card, será mostrado o card seguinte
+        else {
+            PMeContainer.scrollLeft += 440; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    }
+}
+PMeSetaDireita.addEventListener('click', carrosselPMEMoverDireita);
+
+// Mover para esquerda
+function carrosselPMEMoverEsquerda(){
+
+    // Telas com width de até 458px
+    if (telaMuitoPequena.matches){
+        // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
+        if (PMeContainer.scrollLeft <= 0) {
+            PMeContainer.scrollLeft = PMeContainer.scrollWidth - PMeContainer.clientWidth;
+        } 
+        // Se não for o 1º card, será mostrado o card anterior
+        else {
+            PMeContainer.scrollLeft -= 340; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    }
+    // Telas com width entre 398px e 458px
+    else if(telaPequena.matches){
+        // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
+        if (PMeContainer.scrollLeft <= 0) {
+            PMeContainer.scrollLeft = PMeContainer.scrollWidth - PMeContainer.clientWidth;
+        } 
+        // Se não for o 1º card, será mostrado o card anterior
+        else {
+            PMeContainer.scrollLeft -= 360; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    }
+    // Telas com width superior a 458px
+    else{
+        // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
+        if (PMeContainer.scrollLeft <= 0) {
+            PMeContainer.scrollLeft = PMeContainer.scrollWidth - PMeContainer.clientWidth;
+        } 
+        // Se não for o 1º card, será mostrado o card anterior
+        else {
+            PMeContainer.scrollLeft -= 440; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    }
+}
+PMeSetaEsquerda.addEventListener('click', carrosselPMEMoverEsquerda);
