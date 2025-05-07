@@ -6,6 +6,7 @@ main{
     flex-direction: column;
     gap: 100px;
 }
+
 /* Título da section */
 section h1{
     font-size: 35px;
@@ -58,6 +59,45 @@ h2.nomeProjeto{
 /* Nome do projeto freelance */
 h2.nomeFreelance{
     background-color: var(--lilas);
+}
+
+/* Carrossel - Container dos Botões */
+div.carrosselProjMaior{
+    display: none; /* Serve apenas para ocultar/exibir a caixa dos botões */
+}
+
+/* Carrosel - Caixa com os botões do carrossel */
+div.carrosselBotoes{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Carrosel - Linha divisória dos botões */
+div.carrosselBotoes span{
+    width: 3px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: var(--branco);
+}
+
+/* Carrosel - Botões */
+div.carrosselBotoes i.setas{
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--branco);
+    transition: 300ms;
+}
+
+div.carrosselBotoes i.setas:nth-child(1):hover{
+    transform: translateX(-3px); /* Move a seta para esquerda */
+    color: var(--ciano-medio);
+}
+
+div.carrosselBotoes i.setas:nth-child(3):hover{
+    transform: translateX(3px); /* Move a seta para direita */
+    color: var(--ciano-medio);
 }
 
 /* Parte referente ao modal: */
@@ -241,4 +281,259 @@ a.modalBotao:hover{
     scale: 1.05;
     color: var(--branco);
     background-color: var(--ciano-medio);
+}
+
+
+
+/* Media query */
+@media screen and (max-width: 389px) {
+    /* Main */
+    main{
+        padding: 50px 10px;
+        gap: 50px;
+    }
+
+    /* Section */
+    section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Título da section */
+    section h1{
+        margin-bottom: 30px;
+    }
+
+    /* Container com os projetos */
+    div.containerProjetos{
+        width: 300px;
+        flex-wrap: unset;
+        justify-content: left;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    /* Div que enbloba img do projeto + nome do projeto */
+    div.containerProjetos div:hover{
+        scale: 1;
+    }
+
+    /* Imagem do projeto */
+    div.containerProjetos img{
+        width: 300px;
+        height: 250px;
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.carrosselProjMaior{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
+
+    /* Carrosel - Botões */
+    div.carrosselBotoes i.setas{
+        transition: 200ms;
+    }
+    div.carrosselBotoes i.setas:nth-child(1):hover{
+        transform: translateX(0); /* Move a seta para esquerda */
+        color: var(--branco);
+    }
+    div.carrosselBotoes i.setas:nth-child(1):active{
+        transform: translateX(0); /* Move a seta para esquerda */
+        color: var(--ciano-medio);
+    }
+
+    div.carrosselBotoes i.setas:nth-child(3):hover{
+        transform: translateX(0); /* Move a seta para direita */
+        color: var(--branco);
+    }
+    div.carrosselBotoes i.setas:nth-child(3):active{
+        transform: translateX(0); /* Move a seta para direita */
+        color: var(--ciano-medio);
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    /* Main */
+    main{
+        padding: 50px 20px;
+        gap: 50px;
+    }
+
+    /* Section */
+    section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Título da section */
+    section h1{
+        margin-bottom: 30px;
+    }
+
+    /* Container com os projetos */
+    div.containerProjetos{
+        width: 320px;
+        flex-wrap: unset;
+        justify-content: left;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    div.containerProjetos div:hover{
+        scale: 1;
+    }
+
+    /* Imagem do projeto */
+    div.containerProjetos img{
+        width: 320px;
+        height: 290px;
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.carrosselProjMaior{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
+
+    /* Carrosel - Botões */
+    div.carrosselBotoes i.setas{
+        transition: 200ms;
+    }
+    div.carrosselBotoes i.setas:nth-child(1):hover{
+        transform: translateX(0); /* Move a seta para esquerda */
+        color: var(--branco);
+    }
+    div.carrosselBotoes i.setas:nth-child(1):active{
+        transform: translateX(0); /* Move a seta para esquerda */
+        color: var(--ciano-medio);
+    }
+
+    div.carrosselBotoes i.setas:nth-child(3):hover{
+        transform: translateX(0); /* Move a seta para direita */
+        color: var(--branco);
+    }
+    div.carrosselBotoes i.setas:nth-child(3):active{
+        transform: translateX(0); /* Move a seta para direita */
+        color: var(--ciano-medio);
+    }
+}
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    /* Main */
+    main{
+        padding: 50px 20px;
+        gap: 50px;
+    }
+
+    /* Section */
+    section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Título da section */
+    section h1{
+        margin-bottom: 30px;
+    }
+
+    /* Container com os projetos */
+    div.containerProjetos{
+        width: 400px;
+        flex-wrap: unset;
+        justify-content: left;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    /* Div que enbloba img do projeto + nome do projeto */
+    div.containerProjetos div:hover{
+        scale: 1;
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.carrosselProjMaior{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
+}
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+    /* Main */
+    main{
+        padding: 50px 30px;
+        gap: 50px;
+    }
+
+    /* Section */
+    section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Título da section */
+    section h1{
+        margin-bottom: 30px;
+    }
+
+    /* Container com os projetos */
+    div.containerProjetos{
+        width: 400px;
+        flex-wrap: unset;
+        justify-content: left;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    /* Div que enbloba img do projeto + nome do projeto */
+    div.containerProjetos div:hover{
+        scale: 1;
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.carrosselProjMaior{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 918px) {
+    /* Main */
+    main{
+        padding: 50px 30px;
+        gap: 50px;
+    }
+
+    /* Section */
+    section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Título da section */
+    section h1{
+        margin-bottom: 30px;
+    }
+
+    /* Container com os projetos */
+    div.containerProjetos{
+        width: 400px;
+        flex-wrap: unset;
+        justify-content: left;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    /* Div que enbloba img do projeto + nome do projeto */
+    div.containerProjetos div:hover{
+        scale: 1;
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.carrosselProjMaior{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
+} 
+@media only screen and (min-width: 919px) and (max-width: 1095px) {
+    /* Main */
+    main{
+        padding: 50px 30px;
+    }
 }

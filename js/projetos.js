@@ -268,3 +268,98 @@ function fecharCalcularIdade(){
     modalCalcularIdade.style.visibility = 'hidden';
 }
 esconderCalcularIdade.addEventListener("click", fecharCalcularIdade);
+
+
+
+/* CARROSSEL */
+// Projetos Maiores 
+const setaEsquerda       = document.querySelectorAll(".setas")[0];
+const setaDireita        = document.querySelectorAll(".setas")[1];
+const containerProjMaior = document.querySelectorAll(".containerProjetos")[0];
+
+/*
+Media query: 
+- Até 389px
+- Entre 390px e 458px
+*/
+const telaMuitoPequena = window.matchMedia('(max-width: 398px)');
+const telaPequena      = window.matchMedia('(min-width: 390px) and (max-width: 458px)');
+
+// Mover para direita
+function carrosselMoverDireita(){
+    const scrollMax = containerProjMaior.scrollWidth - containerProjMaior.clientWidth;
+
+    // Telas com width de até 398px
+    if (telaMuitoPequena.matches){
+        // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
+        if (containerProjMaior.scrollLeft >= scrollMax) {
+            containerProjMaior.scrollLeft = 0;
+        } 
+        // Se não for o último card, será mostrado o card seguinte
+        else {
+            containerProjMaior.scrollLeft += 340; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    } 
+    // Telas com width entre 398px e 458px
+    else if(telaPequena.matches){
+        // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
+        if (containerProjMaior.scrollLeft >= scrollMax) {
+            containerProjMaior.scrollLeft = 0;
+        } 
+        // Se não for o último card, será mostrado o card seguinte
+        else {
+            containerProjMaior.scrollLeft += 360; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    }
+    // Telas com width superior a 398px
+    else{
+        // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
+        if (containerProjMaior.scrollLeft >= scrollMax) {
+            containerProjMaior.scrollLeft = 0;
+        } 
+        // Se não for o último card, será mostrado o card seguinte
+        else {
+            containerProjMaior.scrollLeft += 440; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    }
+}
+setaDireita.addEventListener('click', carrosselMoverDireita);
+
+// Mover para esquerda
+function carrosselMoverEsquerda(){
+
+    // Telas com width de até 458px
+    if (telaMuitoPequena.matches){
+        // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
+        if (containerProjMaior.scrollLeft <= 0) {
+            containerProjMaior.scrollLeft = containerProjMaior.scrollWidth - containerProjMaior.clientWidth;
+        } 
+        // Se não for o 1º card, será mostrado o card anterior
+        else {
+            containerProjMaior.scrollLeft -= 340; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    }
+    // Telas com width entre 398px e 458px
+    else if(telaPequena.matches){
+        // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
+        if (containerProjMaior.scrollLeft <= 0) {
+            containerProjMaior.scrollLeft = containerProjMaior.scrollWidth - containerProjMaior.clientWidth;
+        } 
+        // Se não for o 1º card, será mostrado o card anterior
+        else {
+            containerProjMaior.scrollLeft -= 360; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    }
+    // Telas com width superior a 458px
+    else{
+        // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
+        if (containerProjMaior.scrollLeft <= 0) {
+            containerProjMaior.scrollLeft = containerProjMaior.scrollWidth - containerProjMaior.clientWidth;
+        } 
+        // Se não for o 1º card, será mostrado o card anterior
+        else {
+            containerProjMaior.scrollLeft -= 440; // Esse nº vem do width da img + gap entre as img, então ele avançará um card
+        }
+    }
+}
+setaEsquerda.addEventListener('click', carrosselMoverEsquerda);
