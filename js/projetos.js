@@ -224,3 +224,25 @@ function fecharCardReview(){
     modalCardReview.style.visibility  = 'hidden';
 }
 esconderCardReview.addEventListener("click", fecharCardReview);
+
+
+// Modal (Projeto Menores) - Hora do Dia
+const cardHoraDia     = document.querySelectorAll(".containerProjetos div")[10];
+const modalHoraDia    = document.querySelectorAll(".modalProjeto")[10];
+const esconderHoraDia = document.querySelectorAll(".icon-x")[10];
+
+// Abrir modal
+function abrirHoraDia(){
+    camadaPretaMenor.style.visibility = 'visible';
+    camadaPretaMenor.style.opacity    = 100;
+    modalHoraDia.style.visibility     = 'visible';
+}
+cardHoraDia.addEventListener("click", abrirHoraDia);
+
+// Fechar modal
+function fecharHoraDia(){
+    camadaPretaMenor.style.visibility = 'hidden';
+    camadaPretaMenor.style.opacity    = 0;
+    modalHoraDia.style.visibility     = 'hidden';
+}
+esconderHoraDia.addEventListener("click", fecharHoraDia);
