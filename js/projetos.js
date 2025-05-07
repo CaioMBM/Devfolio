@@ -246,3 +246,25 @@ function fecharHoraDia(){
     modalHoraDia.style.visibility     = 'hidden';
 }
 esconderHoraDia.addEventListener("click", fecharHoraDia);
+
+
+// Modal (Projeto Menores) - Calcular Idade
+const cardCalcularIdade     = document.querySelectorAll(".containerProjetos div")[11];
+const modalCalcularIdade    = document.querySelectorAll(".modalProjeto")[11];
+const esconderCalcularIdade = document.querySelectorAll(".icon-x")[11];
+
+// Abrir modal
+function abrirCalcularIdade(){
+    camadaPretaMenor.style.visibility   = 'visible';
+    camadaPretaMenor.style.opacity      = 100;
+    modalCalcularIdade.style.visibility = 'visible';
+}
+cardCalcularIdade.addEventListener("click", abrirCalcularIdade);
+
+// Fechar modal
+function fecharCalcularIdade(){
+    camadaPretaMenor.style.visibility   = 'hidden';
+    camadaPretaMenor.style.opacity      = 0;
+    modalCalcularIdade.style.visibility = 'hidden';
+}
+esconderCalcularIdade.addEventListener("click", fecharCalcularIdade);
