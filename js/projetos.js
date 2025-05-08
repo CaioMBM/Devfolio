@@ -455,3 +455,32 @@ function carrosselPMEMoverEsquerda(){
     }
 }
 PMeSetaEsquerda.addEventListener('click', carrosselPMEMoverEsquerda);
+
+
+
+/* Alterando o conteúdo dos boões dos modais */
+const telaMax598px = window.matchMedia("(max-width: 598px)");
+const btnRepositorio = document.querySelectorAll(".btnRepositorio");
+const btnProjeto     = document.querySelectorAll(".btnProjeto");
+
+
+// Função que atualiza o texto condicionalmente
+function atualizaTextoLink() {
+
+    // Telas com width de até 598px
+    if (telaMax598px.matches) {
+        // O forEach() faz com que todos os botões/links referente ao repositório sejam alterados
+        btnRepositorio.forEach(function(buttonRepositorio){
+            buttonRepositorio.textContent = "REPOSITÓRIO";
+        })
+        // O forEach() faz com que todos os botões/links referente ao projeto sejam alterados
+        btnProjeto.forEach(function(buttonProjeto){
+            buttonProjeto.textContent = "PROJETO";
+        })
+    }
+}
+
+// Executa ao carregar a página
+atualizaTextoLink();
+// Escuta mudanças de tamanho do width da tela
+telaMax598px.addEventListener("change", atualizaTextoLink);
