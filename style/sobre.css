@@ -1,1 +1,66 @@
 @import url(base.css);
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--branco);
+}
+
+/* Section Sobre + Tecnologias e Ferramentas */
+section#SobreTec{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--robotoCondesed);
+}
+
+/* Sobre  */
+div#sobreMim{
+    width: 570px;
+}
+
+div#sobreMim p{
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--branco);
+}
+
+/* Tecnologias e Ferramentas */
+div#TecsFerramentas{
+    width: 380px;
+}
+
+/* Container com os icos */
+div.containerIconsTecs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Icon + Nome do Icon*/
+div.contentIcosTecs{
+    width: 85px;
+    height: 85px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+    font-family: var(--nunito);
+    color: var(--branco);
+    background-color: #8080803d;
+    transition: 300ms;
+}
+
+div.contentIcosTecs:hover{
+    scale: 1.1;
+    background-color: var(--cinza-escuro);
+}
+
+/* Icon */
+div.contentIcosTecs img{
+    width: 50px;
+}
