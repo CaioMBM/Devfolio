@@ -1,5 +1,11 @@
 @import url(base.css);
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
 h1 {
     font-size: 35px;
     margin-bottom: 15px;
@@ -63,4 +69,86 @@ div.contentIcosTecs:hover{
 /* Icon */
 div.contentIcosTecs img{
     width: 50px;
+}
+
+/* Linha divisória */
+div#mainLinhaDivisoria{
+    height: 2px;
+    background-color: var(--branco);
+}
+
+
+/* Section Experiencia + Certificados */
+section#ExperienciaCertificados{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--robotoCondesed);
+    color: var(--branco);
+}
+
+/* Card Experiência + Certificados - Container */
+div.card{
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--azul-acinzentado);
+}
+
+/* Card Experiência - Container  */
+div.cardExperiencia{
+    max-width: 580px;
+}
+/* Card Certificados - Container  */
+div.cardCertificados{
+    max-width: 450px;
+}
+
+/* Card Experiência e Certificados - Título */
+div.card h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Card Experiência e Certificados - Subítulo */
+div.card h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--ciano-claro);
+}
+
+/* Card Experiência e Certificados - Período */
+div.card h4{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--cinza-medio);
+}
+
+/* Card Certificados - Icon e Linha vertical + Card */
+div.ContainerIcon-e-card{
+    display: flex;
+    gap: 10px;
+}
+
+/* Card Certificados - Icon */
+div.icon_LinhaVertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+/* Card Certificados - Icon */
+i.icon-certificado{
+    padding: 12px;
+    font-size: 22px;
+    border: 2px solid var(--branco);
+    border-radius: 50%;
+    background-color: var(--ciano-escuro);
+}
+
+div.linhaVertical{
+    width: 2px;
+    height: 100%;
+    background-color: var(--branco);
 }
