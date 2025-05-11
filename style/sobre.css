@@ -114,7 +114,8 @@ div.cardExperiencia p{
 
 /* Card Certificados - Container  */
 div.cardCertificados{
-    max-width: 450px;
+    position: relative; /* Está com position: relative pq o span desse card tem position: absolute, ent é preciso desse relative para que o span respeite apenas o espaço interno ao usar as medidas no bottom e left */
+    width: 450px;
     height: fit-content;
 }
 
@@ -133,6 +134,16 @@ div.card h3{
 
 /* Card Experiência e Certificados - Período */
 div.card h4{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--cinza-medio);
+}
+
+/* Card Certificados - Certificado */
+div.card span{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
     font-size: 15px;
     font-weight: 400;
     color: var(--cinza-medio);
