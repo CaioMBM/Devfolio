@@ -13,30 +13,31 @@ h1 {
     color: var(--branco);
 }
 
-/* Section Sobre + Tecnologias e Ferramentas */
+/* Sobre mim - Section Sobre + Tecnologias e Ferramentas */
 section#SobreTec{
     display: flex;
     justify-content: space-between;
     font-family: var(--robotoCondesed);
 }
 
-/* Sobre  */
+/* Sobre mim - Sobre  */
 div#sobreMim{
     width: 570px;
 }
 
+/* Sobre mim - Parágrafo */
 div#sobreMim p{
     font-size: 25px;
     font-weight: 300;
     color: var(--branco);
 }
 
-/* Tecnologias e Ferramentas */
+/* Sobre mim - Tecnologias e Ferramentas */
 div#TecsFerramentas{
     width: 380px;
 }
 
-/* Container com os icos */
+/* Sobre mim - Container com os icons */
 div.containerIconsTecs{
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +45,7 @@ div.containerIconsTecs{
     gap: 20px;
 }
 
-/* Icon + Nome do Icon*/
+/* Sobre mim - Icon + Nome do Icon*/
 div.contentIcosTecs{
     width: 85px;
     height: 85px;
@@ -66,7 +67,7 @@ div.contentIcosTecs:hover{
     background-color: var(--cinza-escuro);
 }
 
-/* Icon */
+/* Sobre mim - Icon */
 div.contentIcosTecs img{
     width: 50px;
 }
@@ -182,4 +183,200 @@ div.linhaVertical{
     width: 2px;
     height: 100%;
     background-color: var(--branco);
+}
+
+
+
+/* Media query */
+@media screen and (max-width: 389px) {
+    main{
+        padding: 30px 15px;
+        gap: 60px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 32px;
+    }
+
+    /* Sobre mim - Section Sobre + Tecnologias e Ferramentas */
+    section#SobreTec{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Sobre mim - Sobre  */
+    div#sobreMim{
+        width: 100%;
+    }
+
+    /* Sobre mim - Parágrafo */
+    div#sobreMim p{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* Sobre mim - Tecnologias e Ferramentas */
+    div#TecsFerramentas{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    main{
+        padding: 50px 30px;
+        gap: 60px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 32px;
+    }
+
+    /* Sobre mim - Section Sobre + Tecnologias e Ferramentas */
+    section#SobreTec{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Sobre mim - Sobre  */
+    div#sobreMim{
+        width: 100%;
+    }
+
+    /* Sobre mim - Parágrafo */
+    div#sobreMim p{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* Sobre mim - Tecnologias e Ferramentas */
+    div#TecsFerramentas{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    main{
+        padding: 50px 40px;
+        gap: 60px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 32px;
+    }
+
+    /* Sobre mim - Section Sobre + Tecnologias e Ferramentas */
+    section#SobreTec{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Sobre mim - Sobre  */
+    div#sobreMim{
+        width: 100%;
+    }
+
+    /* Sobre mim - Parágrafo */
+    div#sobreMim p{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* Sobre mim - Tecnologias e Ferramentas */
+    div#TecsFerramentas{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Sobre mim - Container com os icons */
+    div.containerIconsTecs{
+        margin: 0 auto;
+        max-width: 380px;
+    }
+}
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+    main{
+        padding: 50px 70px;
+        gap: 60px;
+    }
+
+    /* Sobre mim - Section Sobre + Tecnologias e Ferramentas */
+    section#SobreTec{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Sobre mim - Sobre  */
+    div#sobreMim{
+        width: 100%;
+    }
+
+    /* Sobre mim - Tecnologias e Ferramentas */
+    div#TecsFerramentas{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Sobre mim - Container com os icons */
+    div.containerIconsTecs{
+        margin: 0 auto;
+        max-width: 380px;
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 898px) {
+    main{
+        padding: 50px 70px;
+    }
+
+    /* Sobre mim - Section Sobre + Tecnologias e Ferramentas */
+    section#SobreTec{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Sobre mim - Sobre  */
+    div#sobreMim{
+        width: 100%;
+    }
+
+    /* Sobre mim - Tecnologias e Ferramentas */
+    div#TecsFerramentas{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 899px) and (max-width: 1088px) {
+    main{
+        padding: 50px 90px;
+    }
+
+    /* Sobre mim - Section Sobre + Tecnologias e Ferramentas */
+    section#SobreTec{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Sobre mim - Sobre  */
+    div#sobreMim{
+        width: 100%;
+    }
+
+    /* Sobre mim - Tecnologias e Ferramentas */
+    div#TecsFerramentas{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1089px) and (max-width: 1230px) {
+    main{
+        padding: 50px 90px;
+    }
+
+    /* Sobre mim - Sobre  */
+    div#sobreMim{
+        width: 500px;
+    }
 }
