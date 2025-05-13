@@ -120,7 +120,7 @@ div.cardCertificados{
     height: fit-content;
 }
 
-/* Título da Confereência */
+/*  Card Certificados - Título da Confereência */
 div#cardConferencia h2{
     font-size: 25px;
 }
@@ -167,13 +167,14 @@ div.ContainerIcon-e-card{
     gap: 10px;
 }
 
-/* Card Certificados - Icon */
+/* Card Certificados - Icon + Linha vertical*/
 div.icon_LinhaVertical{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
+
 /* Card Certificados - Icon */
 i.icon-certificado{
     padding: 12px;
@@ -183,6 +184,7 @@ i.icon-certificado{
     background-color: var(--ciano-escuro);
 }
 
+/* Card Certificados - Linha vertical */
 div.linhaVertical{
     width: 2px;
     height: 100%;
@@ -311,6 +313,63 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         font-size: 18px;
     }
 
+    /* Card Certificados - Engloba os Cards dos Certificados  */
+    div#certificados section{
+        width: 320px;
+        flex-direction: row;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    /* Card Certificados - Icon e Linha vertical + Card */
+    div.ContainerIcon-e-card{
+        flex-direction: column;
+    }
+
+    /* Card Certificados - Icon + Linha vertical*/
+    div.icon_LinhaVertical{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    /* Card Certificados - Linha vertical */
+    div.linhaVertical{
+        width: 100%;
+        height: 2px; 
+    }
+
+    /* Card Certificados - Container  */
+    div.cardCertificados{
+        width: 320px;
+        height: 205px;
+        justify-content: space-between;
+    }
+
+    /* Card Certificados - Título */
+    div.cardCertificados h2{
+        font-size: 22px;
+    }
+
+    /* Card Certificados - Título da Confereência */
+    div#cardConferencia h2{
+        font-size: 18px;
+    }
+
+    /* Card Certificados - Local */
+    div.cardCertificados h3{
+        font-size: 15px;
+    }
+
+    /* Card Certificados - Período */
+    div.cardCertificados h4{
+        font-size: 15px;
+    }
+
+    /* Card Certificados - Certificado */
+    div.card span{
+        position: initial;
+    }
+
     /* Carrossel - Container dos Botões */
     div.esconderCarrosselBotoes{
         display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
@@ -394,6 +453,67 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         font-size: 18px;
     }
 
+    /* Card Certificados - Engloba os Cards dos Certificados  */
+    div#certificados section{
+        width: 350px;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    /* Card Certificados - Icon e Linha vertical + Card */
+    div.ContainerIcon-e-card{
+        flex-direction: column;
+    }
+
+    /* Card Certificados - Icon + Linha vertical*/
+    div.icon_LinhaVertical{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    /* Card Certificados - Linha vertical */
+    div.linhaVertical{
+        width: 100%;
+        height: 2px; 
+    }
+
+    /* Card Certificados - Container  */
+    div.cardCertificados{
+        width: 350px;
+        height: 240px;
+        justify-content: space-between;
+    }
+
+    /* Título da Confereência */
+    div#cardConferencia h2{
+        font-size: 22px;
+    }
+
+    /* Card Certificados - Título */
+    div.cardCertificados h2{
+        font-size: 25px;
+    }
+
+    /* Card Certificados - Título da Confereência */
+    div#cardConferencia h2{
+        font-size: 22px;
+    }
+
+    /* Card Certificados - Local */
+    div.cardCertificados h3{
+        font-size: 20px;
+    }
+
+    /* Card Certificados - Período */
+    div.cardCertificados h4{
+        font-size: 20px;
+    }
+
+    /* Card Certificados - Certificado */
+    div.card span{
+        position: initial;
+    }
+
     /* Carrossel - Container dos Botões */
     div.esconderCarrosselBotoes{
         display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
@@ -458,7 +578,6 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         width: 380px;
         flex-direction: row;
         overflow: hidden;
-        
     }
 
     /* Card Experiência - Container  */
@@ -481,6 +600,67 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     /* Card Experiência - Texto  */
     div.cardExperiencia p{
         font-size: 18px;
+    }
+
+    /* Card Certificados - Engloba os Cards dos Certificados  */
+    div#certificados section{
+        width: 420px;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    /* Card Certificados - Icon e Linha vertical + Card */
+    div.ContainerIcon-e-card{
+        flex-direction: column;
+    }
+
+    /* Card Certificados - Icon + Linha vertical*/
+    div.icon_LinhaVertical{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    /* Card Certificados - Linha vertical */
+    div.linhaVertical{
+        width: 100%;
+        height: 2px; 
+    }
+
+    /* Card Certificados - Container  */
+    div.cardCertificados{
+        width: 420px;
+        height: 240px;
+        justify-content: space-between;
+    }
+
+    /* Título da Confereência */
+    div#cardConferencia h2{
+        font-size: 22px;
+    }
+
+    /* Card Certificados - Título */
+    div.cardCertificados h2{
+        font-size: 25px;
+    }
+
+    /* Card Certificados - Título da Confereência */
+    div#cardConferencia h2{
+        font-size: 22px;
+    }
+
+    /* Card Certificados - Local */
+    div.cardCertificados h3{
+        font-size: 20px;
+    }
+
+    /* Card Certificados - Período */
+    div.cardCertificados h4{
+        font-size: 20px;
+    }
+
+    /* Card Certificados - Certificado */
+    div.card span{
+        position: initial;
     }
 
     /* Carrossel - Container dos Botões */
@@ -536,13 +716,67 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         width: 470px;
         flex-direction: row;
         overflow: hidden;
-        
     }
 
     /* Card Experiência - Container  */
     div.cardExperiencia{
         width: 470px;
         flex-shrink: 0; /* Permite que o card nâo encolha/diminua */
+    }
+
+    /* Card Certificados - Engloba os Cards dos Certificados  */
+    div#certificados section{
+        width: 450px;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    /* Card Certificados - Icon e Linha vertical + Card */
+    div.ContainerIcon-e-card{
+        flex-direction: column;
+    }
+
+    /* Card Certificados - Icon + Linha vertical*/
+    div.icon_LinhaVertical{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    /* Card Certificados - Linha vertical */
+    div.linhaVertical{
+        width: 100%;
+        height: 2px; 
+    }
+
+    /* Card Certificados - Container  */
+    div.cardCertificados{
+        height: 200px;
+        justify-content: space-between;
+    }
+
+    /* Título da Confereência */
+    div#cardConferencia h2{
+        font-size: 22px;
+    }
+
+    /* Card Certificados - Título */
+    div.cardCertificados h2{
+        font-size: 25px;
+    }
+
+    /* Card Certificados - Título da Confereência */
+    div#cardConferencia h2{
+        font-size: 22px;
+    }
+
+    /* Card Certificados - Local */
+    div.cardCertificados h3{
+        font-size: 20px;
+    }
+
+    /* Card Certificados - Período */
+    div.cardCertificados h4{
+        font-size: 20px;
     }
 
     /* Carrossel - Container dos Botões */
@@ -600,6 +834,61 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         flex-shrink: 0; /* Permite que o card nâo encolha/diminua */
     }
 
+    /* Card Certificados - Engloba os Cards dos Certificados  */
+    div#certificados section{
+        width: 450px;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    /* Card Certificados - Icon e Linha vertical + Card */
+    div.ContainerIcon-e-card{
+        flex-direction: column;
+    }
+
+    /* Card Certificados - Icon + Linha vertical*/
+    div.icon_LinhaVertical{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    /* Card Certificados - Linha vertical */
+    div.linhaVertical{
+        width: 100%;
+        height: 2px; 
+    }
+
+    /* Card Certificados - Container  */
+    div.cardCertificados{
+        height: 200px;
+        justify-content: space-between;
+    }
+
+    /* Título da Confereência */
+    div#cardConferencia h2{
+        font-size: 22px;
+    }
+
+    /* Card Certificados - Título */
+    div.cardCertificados h2{
+        font-size: 25px;
+    }
+
+    /* Card Certificados - Título da Confereência */
+    div#cardConferencia h2{
+        font-size: 22px;
+    }
+
+    /* Card Certificados - Local */
+    div.cardCertificados h3{
+        font-size: 20px;
+    }
+
+    /* Card Certificados - Período */
+    div.cardCertificados h4{
+        font-size: 20px;
+    }
+
     /* Carrossel - Container dos Botões */
     div.esconderCarrosselBotoes{
         display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
@@ -652,6 +941,56 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     div.cardExperiencia{
         width: 580px;
         flex-shrink: 0; /* Permite que o card nâo encolha/diminua */
+    }
+
+    /* Card Certificados - Engloba os Cards dos Certificados  */
+    div#certificados section{
+        width: 450px;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    /* Card Certificados - Icon e Linha vertical + Card */
+    div.ContainerIcon-e-card{
+        flex-direction: column;
+    }
+
+    /* Card Certificados - Icon + Linha vertical*/
+    div.icon_LinhaVertical{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    /* Card Certificados - Linha vertical */
+    div.linhaVertical{
+        width: 100%;
+        height: 2px; 
+    }
+
+    /* Card Certificados - Container  */
+    div.cardCertificados{
+        height: 200px;
+        justify-content: space-between;
+    }
+
+    /* Card Certificados - Título */
+    div.cardCertificados h2{
+        font-size: 25px;
+    }
+
+    /* Card Certificados - Título da Confereência */
+    div#cardConferencia h2{
+        font-size: 22px;
+    }
+
+    /* Card Certificados - Local */
+    div.cardCertificados h3{
+        font-size: 20px;
+    }
+
+    /* Card Certificados - Período */
+    div.cardCertificados h4{
+        font-size: 20px;
     }
 
     /* Carrossel - Container dos Botões */
