@@ -458,7 +458,7 @@ PMeSetaEsquerda.addEventListener('click', carrosselPMEMoverEsquerda);
 
 
 
-/* Alterando o conteúdo dos boões dos modais */
+/* Alterando o conteúdo dos botões dos modais */
 const telaMax598px = window.matchMedia("(max-width: 598px)");
 const btnRepositorio = document.querySelectorAll(".btnRepositorio");
 const btnProjeto     = document.querySelectorAll(".btnProjeto");

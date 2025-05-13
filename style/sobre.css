@@ -120,6 +120,10 @@ div.cardCertificados{
     height: fit-content;
 }
 
+/* Título da Confereência */
+div#cardConferencia h2{
+    font-size: 25px;
+}
 /* Card Experiência e Certificados - Título */
 div.card h2{
     font-size: 30px;
@@ -186,6 +190,46 @@ div.linhaVertical{
 }
 
 
+/* Carrossel - Container dos Botões */
+div.esconderCarrosselBotoes{
+    display: none; /* Serve apenas para ocultar/exibir a caixa dos botões */
+}
+
+/* Carrosel - Caixa com os botões do carrossel */
+div.carrosselBotoes{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Carrosel - Linha divisória dos botões */
+div.carrosselBotoes span{
+    width: 3px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: var(--branco);
+}
+
+/* Carrosel - Botões */
+div.carrosselBotoes i.carrosselSetas{
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--branco);
+    transition: 300ms;
+}
+
+div.carrosselBotoes i.carrosselSetas:nth-child(1):hover{
+    transform: translateX(-3px); /* Move a seta para esquerda */
+    color: var(--ciano-medio);
+}
+
+div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
+    transform: translateX(3px); /* Move a seta para direita */
+    color: var(--ciano-medio);
+}
+
 
 /* Media query */
 @media screen and (max-width: 389px) {
@@ -221,6 +265,56 @@ div.linhaVertical{
         width: 100%;
         text-align: center;
     }
+
+    /* Section Experiencia + Certificados */
+    section#ExperienciaCertificados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* Section Experiencia + Certificados - h1 */
+    section#ExperienciaCertificados h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /* Section Experiencia + Certificados - Cards da Experiência */
+    div#Experiencia section{
+        width: 300px;
+        flex-direction: row;
+        overflow: hidden;
+        
+    }
+
+    /* Card Experiência - Container  */
+    div.cardExperiencia{
+        width: 300px;
+        height: 370px;
+        flex-shrink: 0; /* Permite que o card nâo encolha/diminua */
+        text-align: center;
+    }
+
+    /* Card Experiência - Título e Subítulo */
+    div.cardExperiencia h2, div.cardExperiencia h3{
+        font-size: 20px;
+    }
+
+    /* Card Experiência - Período  */
+    div.cardExperiencia h4{
+        font-size: 15px;
+    }
+
+    /* Card Experiência - Texto  */
+    div.cardExperiencia p{
+        font-size: 18px;
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
 }
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     main{
@@ -254,6 +348,55 @@ div.linhaVertical{
     div#TecsFerramentas{
         width: 100%;
         text-align: center;
+    }
+
+    /* Section Experiencia + Certificados */
+    section#ExperienciaCertificados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* Section Experiencia + Certificados - h1 */
+    section#ExperienciaCertificados h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /* Section Experiencia + Certificados - Cards da Experiência */
+    div#Experiencia section{
+        width: 340px;
+        flex-direction: row;
+        overflow: hidden;
+        
+    }
+
+    /* Card Experiência - Container  */
+    div.cardExperiencia{
+        width: 340px;
+        height: 350px;
+        flex-shrink: 0; /* Permite que o card nâo encolha/diminua */
+    }
+
+    /* Card Experiência - Título e Subítulo */
+    div.cardExperiencia h2, div.cardExperiencia h3{
+        font-size: 20px;
+    }
+
+    /* Card Experiência - Período  */
+    div.cardExperiencia h4{
+        font-size: 15px;
+    }
+
+    /* Card Experiência - Texto  */
+    div.cardExperiencia p{
+        font-size: 18px;
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
     }
 }
 @media only screen and (min-width: 459px) and (max-width: 598px) {
@@ -295,6 +438,55 @@ div.linhaVertical{
         margin: 0 auto;
         max-width: 380px;
     }
+
+    /* Section Experiencia + Certificados */
+    section#ExperienciaCertificados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* Section Experiencia + Certificados - h1 */
+    section#ExperienciaCertificados h1{
+        font-size: 42px;
+        text-align: center;
+    }
+
+    /* Section Experiencia + Certificados - Cards da Experiência */
+    div#Experiencia section{
+        width: 380px;
+        flex-direction: row;
+        overflow: hidden;
+        
+    }
+
+    /* Card Experiência - Container  */
+    div.cardExperiencia{
+        width: 380px;
+        height: 350px;
+        flex-shrink: 0; /* Permite que o card nâo encolha/diminua */
+    }
+
+    /* Card Experiência - Título e Subítulo */
+    div.cardExperiencia h2, div.cardExperiencia h3{
+        font-size: 20px;
+    }
+
+    /* Card Experiência - Período  */
+    div.cardExperiencia h4{
+        font-size: 15px;
+    }
+
+    /* Card Experiência - Texto  */
+    div.cardExperiencia p{
+        font-size: 18px;
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
 }
 @media only screen and (min-width: 599px) and (max-width: 768px) {
     main{
@@ -325,6 +517,38 @@ div.linhaVertical{
         max-width: 380px;
     }
 
+    /* Section Experiencia + Certificados */
+    section#ExperienciaCertificados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* Section Experiencia + Certificados - h1 */
+    section#ExperienciaCertificados h1{
+        font-size: 42px;
+        text-align: center;
+    }
+
+    /* Section Experiencia + Certificados - Cards da Experiência */
+    div#Experiencia section{
+        width: 470px;
+        flex-direction: row;
+        overflow: hidden;
+        
+    }
+
+    /* Card Experiência - Container  */
+    div.cardExperiencia{
+        width: 470px;
+        flex-shrink: 0; /* Permite que o card nâo encolha/diminua */
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 898px) {
     main{
@@ -346,6 +570,39 @@ div.linhaVertical{
     div#TecsFerramentas{
         width: 100%;
         text-align: center;
+    }
+
+    /* Section Experiencia + Certificados */
+    section#ExperienciaCertificados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* Section Experiencia + Certificados - h1 */
+    section#ExperienciaCertificados h1{
+        font-size: 42px;
+        text-align: center;
+    }
+
+    /* Section Experiencia + Certificados - Cards da Experiência */
+    div#Experiencia section{
+        width: 580px;
+        flex-direction: row;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    /* Card Experiência - Container  */
+    div.cardExperiencia{
+        width: 580px;
+        flex-shrink: 0; /* Permite que o card nâo encolha/diminua */
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
     }
 }
 @media only screen and (min-width: 899px) and (max-width: 1088px) {
@@ -369,8 +626,51 @@ div.linhaVertical{
         width: 100%;
         text-align: center;
     }
+
+    /* Section Experiencia + Certificados */
+    section#ExperienciaCertificados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* Section Experiencia + Certificados - h1 */
+    section#ExperienciaCertificados h1{
+        font-size: 42px;
+        text-align: center;
+    }
+
+    /* Section Experiencia + Certificados - Cards da Experiência */
+    div#Experiencia section{
+        width: 580px;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    /* Card Experiência - Container  */
+    div.cardExperiencia{
+        width: 580px;
+        flex-shrink: 0; /* Permite que o card nâo encolha/diminua */
+    }
+
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
 }
-@media only screen and (min-width: 1089px) and (max-width: 1230px) {
+@media only screen and (min-width: 1089px) and (max-width: 1228px) {
+    /* Section Experiencia + Certificados */
+    section#ExperienciaCertificados{
+        gap: 40px;
+    }
+
+    /* Card Certificados - Container  */
+    div.cardCertificados{
+        width: 380px;
+    }
+}
+@media only screen and (min-width: 1229px) and (max-width: 1399px) {
     main{
         padding: 50px 90px;
     }
@@ -378,5 +678,15 @@ div.linhaVertical{
     /* Sobre mim - Sobre  */
     div#sobreMim{
         width: 500px;
+    }
+
+    /* Section Experiencia + Certificados */
+    section#ExperienciaCertificados{
+        gap: 40px;
+    }
+
+    /* Card Certificados - Container  */
+    div.cardCertificados{
+        width: 420px;
     }
 }
