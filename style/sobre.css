@@ -92,6 +92,7 @@ div#Experiencia section{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    scroll-behavior: smooth;
 }
 
 /* Card Experiência + Certificados - Container */
