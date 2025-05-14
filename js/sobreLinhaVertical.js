@@ -99,38 +99,3 @@ function ajustarLinhaUX_Google() {
 }
 window.addEventListener('load', ajustarLinhaUX_Google);
 window.addEventListener('resize', ajustarLinhaUX_Google);
-
-
-/* CARROSSEL */
-const setaEsquerda = document.querySelectorAll(".carrosselSetas")[0];
-const setaDireita  = document.querySelectorAll(".carrosselSetas")[1];
-const cardExperiencia    = document.querySelectorAll(".cardExperiencia");
-const containerCarrossel = document.querySelector("#Experiencia section");
-const scrollMax = containerCarrossel.scrollWidth - containerCarrossel.clientWidth;
-
-
-// Mover para direita
-function carrosselMoverDireita(){ 
-    // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
-    if (containerCarrossel.scrollLeft >= scrollMax) {
-        containerCarrossel.scrollLeft = 0;
-    } 
-    // Se não for o último card, será mostrado o card seguinte
-    else {
-        containerCarrossel.scrollLeft += 620; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card
-    }
-}
-setaDireita.addEventListener('click', carrosselMoverDireita);
-
-// Mover para esquerda
-function carrosselMoverEsquerda(){ 
-    // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
-    if (containerCarrossel.scrollLeft <= 0) {
-        containerCarrossel.scrollLeft = containerCarrossel.scrollWidth - containerCarrossel.clientWidth;
-    } 
-    // Se não for o 1º card, será mostrado o card anterior
-    else {
-        containerCarrossel.scrollLeft -= 620; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card
-    }
-}
-setaEsquerda.addEventListener('click', carrosselMoverEsquerda);

@@ -949,6 +949,7 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         width: 450px;
         flex-direction: row;
         overflow: hidden;
+        scroll-behavior: smooth;
     }
 
     /* Card Certificados - Icon e Linha vertical + Card */
