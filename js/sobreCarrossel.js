@@ -41,14 +41,28 @@ const certScrollMax = certContainerCarrossel.scrollWidth - certContainerCarrosse
 function certCarrosselMoverDireita(){ 
     console.log("Mover direira")
     
-    certContainerCarrossel.scrollLeft += 460; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card
+    // Se estiver no último card e então clicar para mover para direita, será mostrado o 1º card do carrossel
+    if (certContainerCarrossel.scrollLeft >= certScrollMax) {
+        certContainerCarrossel.scrollLeft = 0;
+    }
+    // Se não for o último card, será mostrado o card seguinte
+    else {
+        certContainerCarrossel.scrollLeft += 460; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card
+    }
+    
 }
 certSetaDireita.addEventListener('click', certCarrosselMoverDireita);
 
 // Mover para esquerda
-function certCarrosselMoverEsquerda(){ 
-    console.log("Mover direira")
+function certCarrosselMoverEsquerda(){     
+    // Se estiver no 1º card e então clicar para mover para esquerda, será mostrado o último card do carrossel
+    if (certContainerCarrossel.scrollLeft <= 0) {
+        certContainerCarrossel.scrollLeft = certContainerCarrossel.scrollWidth - certContainerCarrossel.clientWidth;
+    } 
+    // Se não for o 1º card, será mostrado o card anterior
+    else {
+        certContainerCarrossel.scrollLeft -= 460; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card
+    }
     
-    certContainerCarrossel.scrollLeft -= 460; // Esse nº vem do width do card + gap entre os cards, então ele avançará um card
 }
 certSetaEsquerda.addEventListener('click', certCarrosselMoverEsquerda);
