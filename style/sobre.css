@@ -317,9 +317,10 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     /* Card Certificados - Engloba os Cards dos Certificados  */
     div#certificados section{
         width: 320px;
+        margin: 0 auto;
         flex-direction: row;
         overflow: hidden;
-        margin: 0 auto;
+        scroll-behavior: smooth;
     }
 
     /* Card Certificados - Icon e Linha vertical + Card */
@@ -331,6 +332,13 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     div.icon_LinhaVertical{
         flex-direction: row;
         gap: 15px;
+    }
+
+    /* Card Certificados - Icon */
+    i.icon-certificado{
+        padding: 10px;
+        font-size: 20px;
+        margin-left: 2px;
     }
 
     /* Card Certificados - Linha vertical */
@@ -459,6 +467,7 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         width: 350px;
         flex-direction: row;
         overflow: hidden;
+        scroll-behavior: smooth;
     }
 
     /* Card Certificados - Icon e Linha vertical + Card */
@@ -608,11 +617,17 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         width: 420px;
         flex-direction: row;
         overflow: hidden;
+        scroll-behavior: smooth;
     }
 
     /* Card Certificados - Icon e Linha vertical + Card */
     div.ContainerIcon-e-card{
         flex-direction: column;
+    }
+
+    /* Card Certificados - Icon */
+    i.icon-certificado{
+        margin-left: 2px;
     }
 
     /* Card Certificados - Icon + Linha vertical*/
@@ -730,6 +745,7 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         width: 450px;
         flex-direction: row;
         overflow: hidden;
+        scroll-behavior: smooth;
     }
 
     /* Card Certificados - Icon e Linha vertical + Card */
@@ -840,6 +856,7 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         width: 450px;
         flex-direction: row;
         overflow: hidden;
+        scroll-behavior: smooth;
     }
 
     /* Card Certificados - Icon e Linha vertical + Card */
