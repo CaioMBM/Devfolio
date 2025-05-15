@@ -176,6 +176,7 @@ div.ContainerIcon-e-card{
 
 /* Card Certificados - Icon + Linha vertical*/
 div.icon_LinhaVertical{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,10 +193,51 @@ i.icon-certificado{
 }
 
 /* Card Certificados - Linha vertical */
-div.linhaVertical{
+div.linhaVertical, div.linhaHorizontalPython{
     width: 2px;
     height: 100%;
+    z-index: 1;
     background-color: var(--branco);
+}
+
+/* Card Certificados - Linha horizontal exclusiva para o último card */
+div.linhaHorizontalPython{
+    display: none;
+}
+
+/* Card Certificados - Linha vertical exclusiva para o último card */
+div.linhaVerticalPython{
+    display: none;
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: var(--branco);
+}
+
+/* Posição da ponta da seta */
+div.setaLinha{
+    display: none;
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    right: 0;
+    background-color: var(--branco);
+    z-index: 2;
+}
+
+/* Seta esquerda */
+div.setaPontaEsquerda{
+    top: 19px;
+    rotate: 45deg;
+}
+
+/* Seta direita */
+div.setaPontaDireita{
+    bottom: 19px;
+    rotate: -45deg;
 }
 
 
@@ -353,6 +395,38 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         height: 2px; 
     }
 
+    /* Posição da ponta da seta */
+    div.setaLinha{
+        display: block;
+        width: 15px;
+        height: 2px;
+        right: -4px;
+    }
+
+    /* Seta esquerda */
+    div.setaPontaEsquerda{
+        top: 19px;
+        rotate: 45deg;
+    }
+
+    /* Seta direita */
+    div.setaPontaDireita{
+        bottom: 20px;
+        rotate: -45deg;
+    }
+
+    /* Card Certificados - Linha horizontal exclusiva para o último card */
+    div.linhaHorizontalPython{
+        display: block;
+        width: 100%;
+        height: 2px;
+    }
+
+    /* Card Certificados - Linha vertical exclusiva para o último card */
+    div.linhaVerticalPython{
+        display: block;
+    }
+
     /* Card Certificados - Container  */
     div.cardCertificados{
         width: 320px;
@@ -486,6 +560,26 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     div.linhaVertical{
         width: 100%;
         height: 2px; 
+    }
+
+    /* Posição da ponta da seta */
+    div.setaLinha{
+        display: block;
+        width: 18px;
+        height: 2px;
+        right: -2px;
+    }
+
+    /* Card Certificados - Linha horizontal exclusiva para o último card */
+    div.linhaHorizontalPython{
+        display: block;
+        width: 100%;
+        height: 2px;
+    }
+
+    /* Card Certificados - Linha vertical exclusiva para o último card */
+    div.linhaVerticalPython{
+        display: block;
     }
 
     /* Card Certificados - Container  */
@@ -633,6 +727,26 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         height: 2px; 
     }
 
+    /* Posição da ponta da seta */
+    div.setaLinha{
+        display: block;
+        width: 18px;
+        height: 2px;
+        right: -2px;
+    }
+
+    /* Card Certificados - Linha horizontal exclusiva para o último card */
+    div.linhaHorizontalPython{
+        display: block;
+        width: 100%;
+        height: 2px;
+    }
+
+    /* Card Certificados - Linha vertical exclusiva para o último card */
+    div.linhaVerticalPython{
+        display: block;
+    }
+
     /* Card Certificados - Container  */
     div.cardCertificados{
         width: 420px;
@@ -752,6 +866,26 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         height: 2px; 
     }
 
+    /* Posição da ponta da seta */
+    div.setaLinha{
+        display: block;
+        width: 18px;
+        height: 2px;
+        right: -1px;
+    }
+
+    /* Card Certificados - Linha horizontal exclusiva para o último card */
+    div.linhaHorizontalPython{
+        display: block;
+        width: 100%;
+        height: 2px;
+    }
+
+    /* Card Certificados - Linha vertical exclusiva para o último card */
+    div.linhaVerticalPython{
+        display: block;
+    }
+
     /* Card Certificados - Container  */
     div.cardCertificados{
         height: 200px;
@@ -863,6 +997,23 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         height: 2px; 
     }
 
+     /* Posição da ponta da seta */
+    div.setaLinha{
+        display: block;
+    }
+
+    /* Card Certificados - Linha horizontal exclusiva para o último card */
+    div.linhaHorizontalPython{
+        display: block;
+        width: 100%;
+        height: 2px;
+    }
+
+    /* Card Certificados - Linha vertical exclusiva para o último card */
+    div.linhaVerticalPython{
+        display: block;
+    }
+
     /* Card Certificados - Container  */
     div.cardCertificados{
         height: 200px;
@@ -970,7 +1121,24 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     /* Card Certificados - Linha vertical */
     div.linhaVertical{
         width: 100%;
-        height: 2px; 
+        height: 2px;
+    }
+
+    /* Posição da ponta da seta */
+    div.setaLinha{
+        display: block;
+    }
+
+    /* Card Certificados - Linha horizontal exclusiva para o último card */
+    div.linhaHorizontalPython{
+        display: block;
+        width: 100%;
+        height: 2px;
+    }
+
+    /* Card Certificados - Linha vertical exclusiva para o último card */
+    div.linhaVerticalPython{
+        display: block;
     }
 
     /* Card Certificados - Container  */
