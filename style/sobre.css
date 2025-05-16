@@ -528,7 +528,7 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     /* Card Experiência - Container  */
     div.cardExperiencia{
         width: 340px;
-        height: 350px;
+        height: 370px;
         flex-shrink: 0; /* Permite que o card nâo encolha/diminua */
     }
 
