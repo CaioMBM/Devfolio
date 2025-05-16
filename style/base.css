@@ -110,6 +110,46 @@ main{
     padding: 50px 120px;
 }
 
+/* Carrossel - Container dos Botões */
+div.esconderCarrosselBotoes{
+    display: none; /* Serve apenas para ocultar/exibir a caixa dos botões */
+}
+
+/* Carrosel - Caixa com os botões do carrossel */
+div.carrosselBotoes{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Carrosel - Linha divisória dos botões */
+div.carrosselBotoes span{
+    width: 3px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: var(--branco);
+}
+
+/* Carrosel - Botões */
+div.carrosselBotoes i.carrosselSetas{
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--branco);
+    transition: 300ms;
+}
+
+div.carrosselBotoes i.carrosselSetas:nth-child(1):hover{
+    transform: translateX(-3px); /* Move a seta para esquerda */
+    color: var(--ciano-medio);
+}
+
+div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
+    transform: translateX(3px); /* Move a seta para direita */
+    color: var(--ciano-medio);
+}
+
 
 /* Footer*/
 footer{
@@ -122,7 +162,7 @@ footer{
 
 
 
-/* Media queris */
+/* Media queris - Nav */
 @media (min-width: 310px) and (max-width: 500px) {
     /* Header */
     nav{
@@ -211,5 +251,93 @@ footer{
     /* Ícone abrir menu hamburguer */
     .icon-menuHeader:nth-child(2){
         display: block;
+    }
+}
+
+/* Media queris - Carrossel */
+@media screen and (max-width: 389px) {
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
+
+    /* Carrosel - Caixa com os botões do carrossel */
+    div.carrosselBotoes{
+        gap: 20px;
+    }
+
+    /* Carrosel - Botões */
+    div.carrosselBotoes i.carrosselSetas{
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
+
+    /* Carrosel - Caixa com os botões do carrossel */
+    div.carrosselBotoes{
+        gap: 20px;
+    }
+
+    /* Carrosel - Botões */
+    div.carrosselBotoes i.carrosselSetas{
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
+
+    /* Carrosel - Caixa com os botões do carrossel */
+    div.carrosselBotoes{
+        gap: 20px;
+    }
+
+    /* Carrosel - Botões */
+    div.carrosselBotoes i.carrosselSetas{
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
+
+    /* Carrosel - Caixa com os botões do carrossel */
+    div.carrosselBotoes{
+        gap: 20px;
+    }
+
+    /* Carrosel - Botões */
+    div.carrosselBotoes i.carrosselSetas{
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 898px) {
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
+    }
+
+    /* Carrosel - Caixa com os botões do carrossel */
+    div.carrosselBotoes{
+        gap: 20px;
+    }
+
+    /* Carrosel - Botões */
+    div.carrosselBotoes i.carrosselSetas{
+        font-size: 35px;
+    }
+}
+@media (min-width: 899px) and (max-width: 1088px) {
+    /* Carrossel - Container dos Botões */
+    div.esconderCarrosselBotoes{
+        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
     }
 }

@@ -241,45 +241,7 @@ div.setaPontaDireita{
 }
 
 
-/* Carrossel - Container dos Botões */
-div.esconderCarrosselBotoes{
-    display: none; /* Serve apenas para ocultar/exibir a caixa dos botões */
-}
 
-/* Carrosel - Caixa com os botões do carrossel */
-div.carrosselBotoes{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* Carrosel - Linha divisória dos botões */
-div.carrosselBotoes span{
-    width: 3px;
-    height: 20px;
-    border-radius: 5px;
-    background-color: var(--branco);
-}
-
-/* Carrosel - Botões */
-div.carrosselBotoes i.carrosselSetas{
-    cursor: pointer;
-    font-size: 30px;
-    color: var(--branco);
-    transition: 300ms;
-}
-
-div.carrosselBotoes i.carrosselSetas:nth-child(1):hover{
-    transform: translateX(-3px); /* Move a seta para esquerda */
-    color: var(--ciano-medio);
-}
-
-div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
-    transform: translateX(3px); /* Move a seta para direita */
-    color: var(--ciano-medio);
-}
 
 
 /* Media query */
@@ -453,21 +415,6 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     div.cardCertificados h4{
         font-size: 15px;
     }
-
-    /* Carrossel - Container dos Botões */
-    div.esconderCarrosselBotoes{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
-    }
-
-    /* Carrosel - Caixa com os botões do carrossel */
-    div.carrosselBotoes{
-        gap: 20px;
-    }
-
-    /* Carrosel - Botões */
-    div.carrosselBotoes i.carrosselSetas{
-        font-size: 40px;
-    }
 }
 @media only screen and (min-width: 390px) and (max-width: 458px) {
     main{
@@ -617,21 +564,6 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     /* Card Certificados - Período */
     div.cardCertificados h4{
         font-size: 14px;
-    }
-
-    /* Carrossel - Container dos Botões */
-    div.esconderCarrosselBotoes{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
-    }
-
-    /* Carrosel - Caixa com os botões do carrossel */
-    div.carrosselBotoes{
-        gap: 20px;
-    }
-
-    /* Carrosel - Botões */
-    div.carrosselBotoes i.carrosselSetas{
-        font-size: 40px;
     }
 }
 @media only screen and (min-width: 459px) and (max-width: 598px) {
@@ -799,21 +731,6 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
         bottom: 10px;
         font-size: 15px;
     }
-
-    /* Carrossel - Container dos Botões */
-    div.esconderCarrosselBotoes{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
-    }
-
-    /* Carrosel - Caixa com os botões do carrossel */
-    div.carrosselBotoes{
-        gap: 20px;
-    }
-
-    /* Carrosel - Botões */
-    div.carrosselBotoes i.carrosselSetas{
-        font-size: 35px;
-    }
 }
 @media only screen and (min-width: 599px) and (max-width: 768px) {
     main{
@@ -946,21 +863,6 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     div.cardCertificados h4{
         font-size: 20px;
     }
-
-    /* Carrossel - Container dos Botões */
-    div.esconderCarrosselBotoes{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
-    }
-
-    /* Carrosel - Caixa com os botões do carrossel */
-    div.carrosselBotoes{
-        gap: 20px;
-    }
-
-    /* Carrosel - Botões */
-    div.carrosselBotoes i.carrosselSetas{
-        font-size: 35px;
-    }
 }
 @media only screen and (min-width: 769px) and (max-width: 898px) {
     main{
@@ -1084,21 +986,6 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     div.cardCertificados h4{
         font-size: 20px;
     }
-
-    /* Carrossel - Container dos Botões */
-    div.esconderCarrosselBotoes{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
-    }
-
-    /* Carrosel - Caixa com os botões do carrossel */
-    div.carrosselBotoes{
-        gap: 20px;
-    }
-
-    /* Carrosel - Botões */
-    div.carrosselBotoes i.carrosselSetas{
-        font-size: 35px;
-    }
 }
 @media only screen and (min-width: 899px) and (max-width: 1088px) {
     main{
@@ -1215,11 +1102,6 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
     /* Card Certificados - Período */
     div.cardCertificados h4{
         font-size: 20px;
-    }
-
-    /* Carrossel - Container dos Botões */
-    div.esconderCarrosselBotoes{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
     }
 }
 @media only screen and (min-width: 1089px) and (max-width: 1228px) {

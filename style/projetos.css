@@ -66,40 +66,6 @@ div.carrosselProjMaior{
     display: none; /* Serve apenas para ocultar/exibir a caixa dos botões */
 }
 
-/* Carrosel - Caixa com os botões do carrossel */
-div.carrosselBotoes{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Carrosel - Linha divisória dos botões */
-div.carrosselBotoes span{
-    width: 3px;
-    height: 20px;
-    border-radius: 5px;
-    background-color: var(--branco);
-}
-
-/* Carrosel - Botões */
-div.carrosselBotoes i.setas{
-    cursor: pointer;
-    font-size: 30px;
-    color: var(--branco);
-    transition: 300ms;
-}
-
-div.carrosselBotoes i.setas:nth-child(1):hover{
-    transform: translateX(-3px); /* Move a seta para esquerda */
-    color: var(--ciano-medio);
-}
-
-div.carrosselBotoes i.setas:nth-child(3):hover{
-    transform: translateX(3px); /* Move a seta para direita */
-    color: var(--ciano-medio);
-}
-
 /* Parte referente ao modal: */
 /* Modal - Camada preta */
 div.camadaPreta{
@@ -325,33 +291,6 @@ a.modalBotao:hover{
         height: 250px;
     }
 
-    /* Carrossel - Container dos Botões */
-    div.carrosselProjMaior{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
-    }
-
-    /* Carrosel - Botões */
-    div.carrosselBotoes i.setas{
-        transition: 200ms;
-    }
-    div.carrosselBotoes i.setas:nth-child(1):hover{
-        transform: translateX(0); /* Move a seta para esquerda */
-        color: var(--branco);
-    }
-    div.carrosselBotoes i.setas:nth-child(1):active{
-        transform: translateX(0); /* Move a seta para esquerda */
-        color: var(--ciano-medio);
-    }
-
-    div.carrosselBotoes i.setas:nth-child(3):hover{
-        transform: translateX(0); /* Move a seta para direita */
-        color: var(--branco);
-    }
-    div.carrosselBotoes i.setas:nth-child(3):active{
-        transform: translateX(0); /* Move a seta para direita */
-        color: var(--ciano-medio);
-    }
-
     /* Parte referente ao modal: */
     /* Modal - Ícone para fechar modal */
     i.icon-x{
@@ -469,33 +408,6 @@ a.modalBotao:hover{
         height: 290px;
     }
 
-    /* Carrossel - Container dos Botões */
-    div.carrosselProjMaior{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
-    }
-
-    /* Carrosel - Botões */
-    div.carrosselBotoes i.setas{
-        transition: 200ms;
-    }
-    div.carrosselBotoes i.setas:nth-child(1):hover{
-        transform: translateX(0); /* Move a seta para esquerda */
-        color: var(--branco);
-    }
-    div.carrosselBotoes i.setas:nth-child(1):active{
-        transform: translateX(0); /* Move a seta para esquerda */
-        color: var(--ciano-medio);
-    }
-
-    div.carrosselBotoes i.setas:nth-child(3):hover{
-        transform: translateX(0); /* Move a seta para direita */
-        color: var(--branco);
-    }
-    div.carrosselBotoes i.setas:nth-child(3):active{
-        transform: translateX(0); /* Move a seta para direita */
-        color: var(--ciano-medio);
-    }
-
     /* Parte referente ao modal: */
     /* Modal - Ícone para fechar modal */
     i.icon-x{
@@ -599,11 +511,6 @@ a.modalBotao:hover{
         scale: 1;
     }
 
-    /* Carrossel - Container dos Botões */
-    div.carrosselProjMaior{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
-    }
-
     /* Parte referente ao modal: */
     /* Modal - Ícone para fechar modal */
     i.icon-x{
@@ -699,11 +606,6 @@ a.modalBotao:hover{
         scale: 1;
     }
 
-    /* Carrossel - Container dos Botões */
-    div.carrosselProjMaior{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
-    }
-
     /* Modal - Caixa com conteúdo do modal */
     div.modalProjeto{
         width: 550px;
@@ -749,11 +651,6 @@ a.modalBotao:hover{
     /* Div que enbloba img do projeto + nome do projeto */
     div.containerProjetos div:hover{
         scale: 1;
-    }
-
-    /* Carrossel - Container dos Botões */
-    div.carrosselProjMaior{
-        display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
     }
 
     /* Modal - Caixa com conteúdo do modal */
