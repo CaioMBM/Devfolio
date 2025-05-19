@@ -8,6 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/contato.css">
     <!-- Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- JS -->
@@ -39,7 +40,57 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <!-- Contato -->
+        <section>
+            <!-- Título da secion -->
+            <h1>Entre em contato!</h1>
+            
+            <!-- Paragrafo da secion -->
+            <p>Preencha o formulário abaixo e entre em contato comigo para tirar dúvidas ou para fazer alguma proposta de projeto.</p>
+
+            <!-- Formulário de contato -->
+            <form action="#">
+                <!-- Nome + Email -->
+                <div id="Nome_Email">
+                    <!-- Nome -->
+                    <div class="label_input">
+                        <label for="ipt-nome">Nome</label>
+                        <input type="text" name="nome" id="ipt-nome" placeholder="Seu nome..." required>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="label_input">
+                        <label for="ipt-Email">E-mail</label>
+                        <input type="email" name="email" id="ipt-Email" placeholder="Seu e-mail..." required>
+                    </div>
+                </div>
+
+                <!-- Assunto -->
+                <label for="ipt-assunto">Assunto</label>
+                <input type="text" name="assunto" id="ipt-assunto" placeholder="Assunto a tratar..." required>
+
+                <!-- Mensagem -->
+                <label for="ipt-mensagem">Mensagem</label>
+                <textarea type="text" name="mensagem" id="ipt-mensagem" rows="5" placeholder="Fale o que queira..." required></textarea>
+                
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- E-mail de contato -->
+            <div>
+                <!-- Ícone -->
+                <i class="bi bi-envelope-fill"></i>
+
+                <!-- Parágrado -->
+                <p>caiombmonteiro@gmail.com</p>
+            </div>
+        </section>
+
+        <!-- Redes Sociais -->
+        <section></section>
+    </main>
 
     <footer></footer>
 </body>

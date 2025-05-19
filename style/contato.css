@@ -1,1 +1,116 @@
 @import url(base.css);
+
+*{
+    font-family: var(--robotoCondesed);
+    color: var(--branco);
+}
+
+/* Section Contato */
+section:nth-child(1){
+    max-width: 475px;
+}
+
+/* Título da secion */
+h1{
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo da secion */
+p{
+    font-size: 20px;
+}
+
+/* Formulário */
+/* Form */
+form{
+    margin: 20px 0;
+    box-shadow: 0px 0px 10px 0px #ffffff70;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul-acinzentado);
+}
+
+/* Label do form */
+label{
+    width: fit-content;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* Input e Textarea do form */
+input, textarea{
+    margin: 5px 0 12px 0;
+    border: 1px solid var(--branco);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+/* Textarea do form */
+textarea{
+    resize: none;
+}
+
+input::placeholder{
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--cinza-medio);
+}
+
+input:focus, input:hover, textarea:focus, textarea:hover{
+    outline: 3px solid var(--ciano-escuro);
+    border: 1px solid var(--ciano-escuro);
+}
+
+/* Botão do form */
+form button{
+    cursor: pointer;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--ciano-escuro);
+    transition: 300ms;
+}
+
+form button:hover{
+    background-color: var(--ciano-claro);
+}
+
+/* Nome + Email */
+div#Nome_Email{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Label + Input */
+div.label_input{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* E-mail de contato - Div */
+section:nth-child(1) > div{
+    display: flex;
+    gap: 5px;
+}
+
+/* E-mail de contato - Ícone */
+section:nth-child(1) > div i{
+    font-size: 18px;
+    color: var(--cinza-medio);
+}
+
+/* E-mail de contato - Parágrafo */
+section:nth-child(1) > div p{
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--cinza-medio);
+}
