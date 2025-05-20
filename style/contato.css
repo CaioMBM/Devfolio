@@ -5,6 +5,11 @@
     color: var(--branco);
 }
 
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Section Contato */
 section:nth-child(1){
     max-width: 475px;
@@ -19,6 +24,7 @@ h1{
 
 /* Parágrafo da secion */
 p{
+    height: 50px;
     font-size: 20px;
 }
 
@@ -113,4 +119,49 @@ section:nth-child(1) > div p{
     font-weight: 400;
     font-size: 14px;
     color: var(--cinza-medio);
+}
+
+/* Section Redes Sociais */
+section:nth-child(2){
+    max-width: 500px;
+}
+
+/* Container com o ícones das redes sociais */
+div.containerIcons{
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+/* Rede social - Conteúdo */
+a.contentIcon{
+    width: 110px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 50%);
+    background-color: rgba(128, 128, 128, 20%);
+    transition: 200ms;
+}
+
+a.contentIcon:hover{
+    scale: 1.05;
+    box-shadow: 0px 0px 10px 4px var(--ciano-escuro);
+}
+
+/* Rede social - Ícone */
+a.contentIcon i{
+    font-size: 40px;
+    color: var(--ciano-escuro);
+}
+
+/* Rede social - Nome da rede social */
+a.contentIcon span{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-style: italic;
 }
