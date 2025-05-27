@@ -8,6 +8,7 @@
 main{
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 
 /* Section Contato */
@@ -92,6 +93,7 @@ form button:hover{
 div#Nome_Email{
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
 /* Label + Input */
@@ -164,4 +166,182 @@ a.contentIcon span{
     letter-spacing: 1px;
     font-weight: bold;
     font-style: italic;
+}
+
+
+
+/* Media Query */
+@media screen and (max-width: 389px) {
+    main{
+        padding: 30px 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    p{
+        height: fit-content;
+    }
+
+    /* Nome + Email */
+    div#Nome_Email{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* Label + Input */
+    div.label_input{
+        width: 100%;
+    }
+
+    /* Container com o ícones das redes sociais */
+    div.containerIcons{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px 40px;
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    main{
+        padding: 30px 40px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    p{
+        height: fit-content;
+    }
+
+    /* Nome + Email */
+    div#Nome_Email{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* Label + Input */
+    div.label_input{
+        width: 100%;
+    }
+
+    /* Container com o ícones das redes sociais */
+    div.containerIcons{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px 60px;
+    }
+}
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    main{
+        padding: 50px 60px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    p{
+        height: fit-content;
+    }
+
+    /* Nome + Email */
+    div#Nome_Email{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* Label + Input */
+    div.label_input{
+        width: 100%;
+    }
+
+    /* Container com o ícones das redes sociais */
+    div.containerIcons{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px 60px;
+    }
+}
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+    main{
+        padding: 50px 0;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    p{
+        height: fit-content;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 918px) {
+    main{
+        padding: 50px 40px;
+    }
+
+    p{
+        height: fit-content;
+    }
+
+    /* Section Contato */
+    section:nth-child(1){
+        max-width: 400px;
+    }
+
+    /* Nome + Email */
+    div#Nome_Email{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* Label + Input */
+    div.label_input{
+        width: 100%;
+    }
+
+    /* Container com o ícones das redes sociais */
+    div.containerIcons{
+        margin-top: 44px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    /* Rede social - Conteúdo */
+    a.contentIcon{
+        width: 100px;
+        padding: 10px 15px;
+    }
+} 
+@media only screen and (min-width: 919px) and (max-width: 1095px) {
+    main{
+        padding: 50px 60px;
+    }
+
+    p{
+        height: fit-content;
+    }
+
+    /* Nome + Email */
+    div#Nome_Email{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* Label + Input */
+    div.label_input{
+        width: 100%;
+    }
+
+    /* Container com o ícones das redes sociais */
+    div.containerIcons{
+        margin-top: 44px;
+        gap: 30px;
+    }
+
+    /* Rede social - Conteúdo */
+    a.contentIcon{
+        width: 100px;
+        padding: 10px 15px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    main{
+        justify-content: center;
+        gap: 400px;
+    }
 }
