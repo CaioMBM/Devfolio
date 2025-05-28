@@ -268,6 +268,11 @@ a.contentIcon span{
     p{
         height: fit-content;
     }
+
+    /* Section Redes Sociais */
+    section:nth-child(2){
+        width: 475px;
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 918px) {
     main{
