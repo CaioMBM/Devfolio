@@ -152,7 +152,7 @@ div.carrosselBotoes i.carrosselSetas:nth-child(3):hover{
 
 
 /* Footer*/
-footer{
+footer p{
     padding: 20px;
     text-align: center;
     font-family: var(--robotoCondesed);

@@ -9,6 +9,7 @@ main{
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    padding: 40px 120px 30px;
 }
 
 /* Section Contato */
@@ -24,7 +25,7 @@ h1{
 }
 
 /* Parágrafo da secion */
-p{
+main p{
     height: 50px;
     font-size: 20px;
 }
