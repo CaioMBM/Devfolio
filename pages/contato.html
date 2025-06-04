@@ -74,6 +74,8 @@
                 <label for="ipt-mensagem">Mensagem</label>
                 <textarea type="text" name="mensagem" id="ipt-mensagem" rows="5" placeholder="Fale o que queira..." required></textarea>
                 
+                <!-- Ao enviar o e-mail o usuário será redirecionado para a página emailEnviado.html -->
+                <input type="hidden" name="_next" value="emailEnviado.html">
 
                 <button type="submit">Enviar</button>
             </form>
