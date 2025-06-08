@@ -72,3 +72,65 @@ button#btn-voltar{
 button#btn-voltar:hover{
     background-color: var(--azul-escuro);
 }
+
+
+
+/* Media query */
+@media screen and (max-width: 389px) {
+    /* Título da secion */
+    h1{
+        font-size: 25px;
+    }
+
+    /* Container */
+    main > div{
+        max-width: 500px;
+        padding: 20px 10px;
+    }
+
+    /* Icon + E-mail */
+    #icon-email{
+        min-width: 240px;
+        padding: 10px 5px;
+        gap: 15px;
+    }
+
+    /* Botão "Votlar */
+    button#btn-voltar{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 458px) {
+    /* Título da secion */
+    h1{
+        font-size: 30px;
+    }
+
+    /* Icon + E-mail */
+    #icon-email{
+        padding: 10px 5px;
+        gap: 15px;
+    }
+
+    /* Botão "Votlar */
+    button#btn-voltar{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 459px) and (max-width: 598px) {
+    /* Título da secion */
+    h1{
+        font-size: 30px;
+    }
+
+    /* Icon + E-mail */
+    #icon-email{
+        padding: 10px 5px;
+        gap: 15px;
+    }
+
+    /* Botão "Votlar */
+    button#btn-voltar{
+        font-size: 20px;
+    }
+}
