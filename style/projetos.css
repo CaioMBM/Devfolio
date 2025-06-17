@@ -1,10 +1,17 @@
 @import url(base.css);
+@import url(keyframes.css);
 
 /* Main */
 main{
     display: flex;
     flex-direction: column;
     gap: 100px;
+}
+
+/* Container com os projetos */
+.containerProjetos{
+    animation: aparecerParaDireita 2s ease;
+    
 }
 
 /* Título da section */
@@ -15,6 +22,7 @@ section h1{
     font-family: var(--robotoCondesed);
     text-align: center;
     text-decoration: underline;
+    animation: tituloParaDireita 1.5s ease;
 }
 
 /* Container com os projetos */
