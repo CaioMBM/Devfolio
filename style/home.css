@@ -1,4 +1,7 @@
 @import url(base.css);
+@import url(keyframes.css);
+
+
 
 main{
     display: flex;
@@ -6,6 +9,11 @@ main{
     justify-content: center;
     gap: 140px;
     font-family: var(--robotoCondesed);
+}
+
+/* Informações + Botões */
+section.mainParte1{
+    animation: aparecerParaDireita 2s ease;
 }
 
 /* Texto da home */
@@ -50,6 +58,10 @@ section.mainParte1 button{
 section.mainParte1 button:hover{
     color: var(--branco);
     background-color: var(--ciano-medio);
+}
+
+section.mainParte2{
+    animation: aparecerParaEsquerda 2s ease;
 }
 
 /* Section mainParte2 */
