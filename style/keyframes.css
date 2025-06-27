@@ -38,4 +38,17 @@
     * See http://animista.net/license for more info. 
     * w: http://animista.net, t: @cssanimista
 ---------------------------------------------- */
-@keyframes jello-vertical{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(.75,1.25,1)}40%{transform:scale3d(1.25,.75,1)}50%{transform:scale3d(.85,1.15,1)}65%{transform:scale3d(1.05,.95,1)}75%{transform:scale3d(.95,1.05,1)}100%{transform:scale3d(1,1,1)}}
+@keyframes jello-vertical{
+    0%{transform:scale3d(1,1,1)}
+    30%{transform:scale3d(.75,1.25,1)}
+    40%{transform:scale3d(1,.75,1)}
+    50%{transform:scale3d(.85,1.15,1)}
+    65%{transform:scale3d(1.05,.95,1)}
+    75%{transform:scale3d(.95,1.05,1)}
+    100%{transform:scale3d(1,1,1)}
+}
+
+@-webkit-keyframes scale-up-center{
+    0%{-webkit-transform:scale(.5);transform:scale(.5)}
+    100%{-webkit-transform:scale(1);transform:scale(1)}
+}

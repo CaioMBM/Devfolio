@@ -56,7 +56,7 @@ section.mainParte1 button{
 section.mainParte1 button:hover{
     color: var(--branco);
     background-color: var(--ciano-medio);
-    animation:jello-vertical .9s both;
+    animation: jello-vertical 1s both;
 }
 
 section.mainParte2{
