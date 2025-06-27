@@ -1,4 +1,5 @@
 @import url(base.css);
+@import url(keyframes.css);
 
 main{
     display: flex;
@@ -23,6 +24,7 @@ section#SobreTec{
 /* Sobre mim - Sobre  */
 div#sobreMim{
     width: 570px;
+    animation: aparecerParaDireita 1.3s ease;
 }
 
 /* Sobre mim - Parágrafo */
@@ -35,6 +37,7 @@ div#sobreMim p{
 /* Sobre mim - Tecnologias e Ferramentas */
 div#TecsFerramentas{
     width: 380px;
+    animation: aparecerParaEsquerda 1.3s ease;
 }
 
 /* Sobre mim - Container com os icons */
@@ -87,7 +90,12 @@ section#ExperienciaCertificados{
     color: var(--branco);
 }
 
-/* Section Experiencia + Certificados - Cards da Experiência */
+/* Experiência */
+div#Experiencia{
+    animation: aparecerParaDireita 1.3s ease;
+}
+
+/* Cards de Experiência */
 div#Experiencia section{
     display: flex;
     flex-direction: column;
@@ -112,6 +120,11 @@ div.cardExperiencia{
 
 div.cardExperiencia p{
     font-size: 20px;
+}
+
+/* Experiência */
+div#certificados{
+    animation: aparecerParaEsquerda 1.3s ease;
 }
 
 /* Card Certificados - Container  */
