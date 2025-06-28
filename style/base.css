@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url(keyframes.css);
 
 :root{
     /* Cores */
@@ -165,7 +166,6 @@ footer p{
 @media (min-width: 310px) and (max-width: 500px) {
     /* Header */
     nav{
-        height: fit-content;
         flex-direction: column;
         gap: 0;
     }
@@ -175,13 +175,16 @@ footer p{
         width: 100%;
         display: flex;
         justify-content: space-around;
-        padding: 15px 0;
+        padding: 20px 0 15px 0;
     }
 
     /* Container que engloba os itens de navegação da nav */
     .nav-containerItens{
+        z-index: 1;
         display: none; 
         width: 100%;
+        background: linear-gradient(90deg,rgba(24, 34, 101, 1) 8%, rgba(98, 118, 212, 1) 42%, rgba(97, 34, 165, 1) 100%);
+        animation: navbarDescer .3s ease-in;
     }
 
     /* Lista dos itens de navegação da nav */
@@ -217,7 +220,6 @@ footer p{
 @media (min-width: 500px) and (max-width: 750px) {
     /* Header */
     nav{
-        height: fit-content;
         flex-direction: column;
         gap: 0;
     }
@@ -225,16 +227,19 @@ footer p{
     /* Div que engloba o nome e o menu hamburguer do header */
     div.nomeIcone{
         width: 100%;
-        padding: 15px 0;
+        padding: 20px 0 15px 0;
         display: flex;
         justify-content: space-around;
     }
 
     /* Container que engloba os itens de navegação da nav */
     .nav-containerItens{
+        z-index: 1;
         width: 100%;
         border: 3px solid var(--branco);
-        display: none; 
+        display: none;
+        background: linear-gradient(90deg,rgba(24, 34, 101, 1) 8%, rgba(98, 118, 212, 1) 42%, rgba(97, 34, 165, 1) 100%);
+        animation: navbarDescer .3s ease-in;
     }
 
     /* Lista dos itens de navegação da nav */
@@ -253,6 +258,13 @@ footer p{
         transition: 300ms;
     }
 
+    .nav-containerItens li:active{
+        background-color: var(--preto);
+    }
+
+    .nav-containerItens li:hover{
+        background-color: var(--azul-pastel);
+    }
 
     /* Ícone abrir menu hamburguer */
     .icon-menuHeader:nth-child(2){
