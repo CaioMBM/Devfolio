@@ -23,3 +23,12 @@
     3. Se necessário, selecione onde você vai armazenar no seu computador.
     4. Descompacte o Zip e você verá uma pasta com o nome do projeto.
     5. Após descompactar, procure pelo arquivo "index.html" dentro da pasta do projeto e clique duas vezes neles para abrir em seu navegador.
+
+# Devfolio - Estrutura de Pastas:
+    /img : Pasta contendo as pastas com todas as imagens e ícones do projeto.
+        /icons           : Pasta contendo todos os ícones do projeto.
+        /ProjetosMaiores : Pasta contendo todos as imagens usadas na seção "Projetos Maiores" em projetos.html.
+        /ProjetosMenores : Pasta contendo todos as imagens usadas na seção "Projetos Menores" em projetos.html.
+    /js    : Pasta contendo todos os arquivos JavaScript do projeto.
+    /pages : Pasta contendo todos os arquivos HTML do projeto.
+    /style : Pasta contendo todos os arquivos CSS do projeto.
