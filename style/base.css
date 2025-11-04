@@ -50,13 +50,13 @@ nav{
 }
 
 /* Todos os links da nav */
-nav a{
+nav a, nav p{
     font-family: var(--robotoCondesed);
     color: var(--branco);
 }
 
 /* Meu nome na nav */
-a.nav-nome{
+.nav-nome{
     font-size: 30px;
     font-weight: bold;
 }
