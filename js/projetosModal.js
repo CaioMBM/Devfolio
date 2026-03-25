@@ -89,3 +89,47 @@ function fecharPreventElevadores(){
     modalPreventElevadores.style.visibility = 'hidden';
 }
 esconderPreventElevadores.addEventListener("click", fecharPreventElevadores);
+
+
+// Modal - RPI (Freelance)
+const cardRPI     = document.querySelectorAll(".containerProjetos div")[4];
+const modalRPI    = document.querySelectorAll(".modalProjeto")[4];
+const esconderRPI = document.querySelectorAll(".icon-x")[4];
+
+// Abrir modal
+function abrirRPI(){
+    camadaPretaPMa.style.visibility   = 'visible';
+    camadaPretaPMa.style.opacity      = 100;
+    modalRPI.style.visibility = 'visible';
+}
+cardRPI.addEventListener("click", abrirRPI);
+
+// Fechar modal
+function fecharRPI(){
+    camadaPretaPMa.style.visibility   = 'hidden';
+    camadaPretaPMa.style.opacity      = 0;
+    modalRPI.style.visibility = 'hidden';
+}
+esconderRPI.addEventListener("click", fecharRPI);
+
+
+// Modal - ByCar Auto Premium (Freelance)
+const cardByCar     = document.querySelectorAll(".containerProjetos div")[5];
+const modalByCar    = document.querySelectorAll(".modalProjeto")[5];
+const esconderByCar = document.querySelectorAll(".icon-x")[5];
+
+// Abrir modal
+function abrirByCar(){
+    camadaPretaPMa.style.visibility   = 'visible';
+    camadaPretaPMa.style.opacity      = 100;
+    modalByCar.style.visibility = 'visible';
+}
+cardByCar.addEventListener("click", abrirByCar);
+
+// Fechar modal
+function fecharByCar(){
+    camadaPretaPMa.style.visibility   = 'hidden';
+    camadaPretaPMa.style.opacity      = 0;
+    modalByCar.style.visibility = 'hidden';
+}
+esconderByCar.addEventListener("click", fecharByCar);
