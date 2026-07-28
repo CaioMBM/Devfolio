@@ -6,96 +6,21 @@ const cardCertificados = document.querySelectorAll(".cardCertificados");
 /* Media query */
 const telaMin_1089 = window.matchMedia('(min-width: 1089px)');
 
-// Formação - ADS
-// Faz com que a altura da linha seja sempre 25px a mais que a altura do card respectivo
-function ajustarLinhaADS() {
-    const alturaADS     = cardCertificados[0].offsetHeight;
-    const alturaIconADS = iconCertificado[0].offsetHeight;
 
-    // Quando o carrossel não aparece a Linha Vertical fica na vertical, quando aparece então fica na horizontal
-    if(telaMin_1089.matches){
-        linhasVertical[0].style.height = (alturaADS - alturaIconADS + 25 ) + 'px';
+// Função para que a linha vertical ultrapasse a parte inferior do card
+function ajustarLinhaVertical() {
+    // Ajusta a altura da linha vertical de acordo com a altura do card respectivo
+    for (let c = 0; c < linhasVertical.length; c++) {
+        const alturaCard = cardCertificados[c].offsetHeight;
+        const alturaIcon = iconCertificado[c].offsetHeight;
+
+        // Especificado para telas com ou mais de 1089px de largura, pois abaixo disso a linha vertical se torna uma linha horizontal (no carrossel)
+        if(telaMin_1089.matches){ 
+            linhasVertical[c].style.height = (alturaCard - alturaIcon + 25 ) + 'px'; }
     }
 }
+
 // Garante que o JavaScript só vá medir e ajustar a altura depois que toda a página ser carregada
-window.addEventListener('load', ajustarLinhaADS);
+window.addEventListener('load', ajustarLinhaVertical);
 // Recalcula automaticamente sempre que a janela for redimensionada
-window.addEventListener('resize', ajustarLinhaADS);
-
-// Certificado - Conferência
-function ajustarLinhaConferencia() {
-    const alturaConferencia     = cardCertificados[1].offsetHeight;
-    const alturaIconConferencia = iconCertificado[1].offsetHeight;
-    
-    // Quando o carrossel não aparece a Linha Vertical fica na vertical, quando aparece então fica na horizontal
-    if(telaMin_1089.matches){
-        linhasVertical[1].style.height = (alturaConferencia - alturaIconConferencia + 25 ) + 'px';
-    }
-}
-window.addEventListener('load', ajustarLinhaConferencia);
-window.addEventListener('resize', ajustarLinhaConferencia);
-
-// Certificado - IA na Gestão
-function ajustarLinhaIAGestao() {
-    const alturaIAGestao     = cardCertificados[2].offsetHeight;
-    const alturaIconIAGestao = iconCertificado[2].offsetHeight;
-    
-    // Quando o carrossel não aparece a Linha Vertical fica na vertical, quando aparece então fica na horizontal
-    if(telaMin_1089.matches){
-        linhasVertical[2].style.height = (alturaIAGestao - alturaIconIAGestao + 25 ) + 'px';
-    }
-}
-window.addEventListener('load', ajustarLinhaIAGestao);
-window.addEventListener('resize', ajustarLinhaIAGestao);
-
-// Certificado - Flexbox
-function ajustarLinhaFlexbox() {
-    const alturaFlexbox     = cardCertificados[3].offsetHeight;
-    const alturaIconFlexbox = iconCertificado[3].offsetHeight;
-    
-    // Quando o carrossel não aparece a Linha Vertical fica na vertical, quando aparece então fica na horizontal
-    if(telaMin_1089.matches){
-        linhasVertical[3].style.height = (alturaFlexbox - alturaIconFlexbox + 25 ) + 'px';
-    }
-}
-window.addEventListener('load', ajustarLinhaFlexbox);
-window.addEventListener('resize', ajustarLinhaFlexbox);
-
-// Certificado - Excel
-function ajustarLinhaExcel() {
-    const alturaExcel     = cardCertificados[4].offsetHeight;
-    const alturaIconExcel = iconCertificado[4].offsetHeight;
-    
-    // Quando o carrossel não aparece a Linha Vertical fica na vertical, quando aparece então fica na horizontal
-    if(telaMin_1089.matches){
-        linhasVertical[4].style.height = (alturaExcel - alturaIconExcel + 25 ) + 'px';
-    }
-}
-window.addEventListener('load', ajustarLinhaExcel);
-window.addEventListener('resize', ajustarLinhaExcel);
-
-// Certificado - UX Unibra
-function ajustarLinhaUX_Unibra() {
-    const alturaUX_Unibra     = cardCertificados[5].offsetHeight;
-    const alturaIconUX_Unibra = iconCertificado[5].offsetHeight;
-    
-    // Quando o carrossel não aparece a Linha Vertical fica na vertical, quando aparece então fica na horizontal
-    if(telaMin_1089.matches){
-        linhasVertical[5].style.height = (alturaUX_Unibra - alturaIconUX_Unibra + 25 ) + 'px';
-    }
-}
-window.addEventListener('load', ajustarLinhaUX_Unibra);
-window.addEventListener('resize', ajustarLinhaUX_Unibra);
-
-// Certificado - UX Google
-function ajustarLinhaUX_Google() {
-    const alturaUX_Google     = cardCertificados[6].offsetHeight;
-    const alturaIconUX_Google = iconCertificado[6].offsetHeight;
-    
-    // Quando o carrossel não aparece a Linha Vertical fica na vertical, quando aparece então fica na horizontal
-    if(telaMin_1089.matches){
-        linhasVertical[6].style.height = (alturaUX_Google - alturaIconUX_Google + 25 ) + 'px';
-    }
-}
-window.addEventListener('load', ajustarLinhaUX_Google);
-window.addEventListener('resize', ajustarLinhaUX_Google);
+window.addEventListener('resize', ajustarLinhaVertical);
