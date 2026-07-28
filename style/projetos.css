@@ -239,22 +239,34 @@ div.containerBotoes{
 /* Modal - Botáo */
 a.modalBotao{
     width: 200px;
-    padding: 10px 0;
-    border-radius: 10px;
+    padding: 12px 0;
+    border-radius: 8px;
     font-family: var(--robotoCondesed);
     font-size: 12px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
-    color: var(--preto);
-    background-color: var(--branco);
     transition: 300ms;
 }
 
 a.modalBotao:hover{
     scale: 1.05;
+    border: 2px solid var(--ciano-medio);
     color: var(--branco);
     background-color: var(--ciano-medio);
+}
+a.modalBotao:active{
+    scale: .8;
+}
+
+a.btnRepositorio{
+    color: var(--branco);
+    border: 2px solid var(--branco);
+}
+
+a.btnProjeto{
+    color: var(--preto);
+    background-color: var(--branco);
 }
 
 
