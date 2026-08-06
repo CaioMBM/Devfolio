@@ -6,7 +6,8 @@
     /* Cores */
     --branco: #fff;
     --preto:  #000;
-
+    --preto2: #020222;
+    
     --azul-escuro:      #03045E;
     --azul-pastel:      #6276D4;
     --azul-acinzentado: #32456F;
@@ -157,7 +158,7 @@ footer p{
     text-align: center;
     font-family: var(--robotoCondesed);
     color: var(--ciano-claro);
-    background-color: var(--preto);
+    background-color: var(--preto2);
 }
 
 
