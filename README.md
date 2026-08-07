@@ -3,7 +3,7 @@
     - Com animações suaves e adaptado para diversos tamanhos de telas.
 
 # Devfolio - Resultado do projeto:
-    - https://caiombm.github.io/Devfolio/ 
+    - https://devfolio-caiomontenegro.vercel.app/ 
 
 # Devfolio - Tecnologias:
     - HTML       : Utilizei pra criar a estrutura da página.
@@ -26,9 +26,8 @@
 
 # Devfolio - Estrutura de Pastas:
     /img : Pasta contendo as pastas com todas as imagens e ícones do projeto.
-        /icons           : Pasta contendo todos os ícones do projeto.
-        /ProjetosMaiores : Pasta contendo todos as imagens usadas na seção "Projetos Maiores" em projetos.html.
-        /ProjetosMenores : Pasta contendo todos as imagens usadas na seção "Projetos Menores" em projetos.html.
+        /icons    : Pasta contendo todos os ícones do projeto.
+        /Projetos : Pasta contendo todos as imagens dos projetos.
     /js    : Pasta contendo todos os arquivos JavaScript do projeto.
-    /pages : Pasta contendo todos os arquivos HTML do projeto.
+    /pages : Pasta contendo todos os arquivos HTML do projeto, com exceção do index.html.
     /style : Pasta contendo todos os arquivos CSS do projeto.
