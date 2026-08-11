@@ -160,11 +160,6 @@ div.modalImgData span{
     color: var(--branco);
 }
 
-/* Modal - Ícone da tecnologia */
-img.iconTecnologia{
-    width: 40px;
-}
-
 /* Modal - Caixa com informações de texto + tecnologias */
 div.modalInformacoes{
     width: 100%;
@@ -225,8 +220,12 @@ img.iconTecnologia{
     width: 50px;
     transition: 300ms;
 }
+img.iconFigma{
+    width: 35px; 
+    transition: 300ms;
+}
 
-img.iconTecnologia:hover{
+img.iconTecnologia:hover, img.iconFigma:hover{
     scale: 1.2;
 }
 
