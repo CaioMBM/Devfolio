@@ -74,6 +74,9 @@ div.contentIcosTecs:hover{
 div.contentIcosTecs img{
     width: 50px;
 }
+div.contentIcosTecs img[src="../img/icons/icon-figma.png"]{
+    width: 35px;
+}
 
 /* Linha divisória */
 div#mainLinhaDivisoria{
