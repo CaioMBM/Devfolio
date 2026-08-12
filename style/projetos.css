@@ -639,7 +639,7 @@ a.btnProjeto{
         height: 200px;
     }
 }
-@media only screen and (min-width: 769px) and (max-width: 918px) {
+@media only screen and (min-width: 769px) and (max-width: 919px) {
     /* Main */
     main{
         padding: 50px 30px;
@@ -680,7 +680,7 @@ a.btnProjeto{
         gap: 30px;
     }
 } 
-@media only screen and (min-width: 919px) and (max-width: 1095px) {
+@media only screen and (min-width: 920px) and (max-width: 1095px) {
     /* Main */
     main{
         padding: 50px 30px;

@@ -354,7 +354,7 @@ footer p{
         font-size: 35px;
     }
 }
-@media (min-width: 899px) and (max-width: 1088px) {
+@media (min-width: 899px) and (max-width: 919px) {
     /* Carrossel - Container dos Botões */
     div.esconderCarrosselBotoes{
         display: block; /* Serve apenas para ocultar/exibir a caixa dos botões */
